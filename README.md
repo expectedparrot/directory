@@ -88,6 +88,16 @@ Premortem facilitates a structured, Gary Klein-style pre-mortem for a decision, 
 
 [GitHub](https://github.com/expectedparrot/premortem) · [Tutorial](https://expectedparrot.github.io/premortem/)
 
+## Treffen
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/treffen"><img src="https://raw.githubusercontent.com/expectedparrot/treffen/main/docs/assets/treffen-package.png" width="640" alt="Treffen package artwork"></a>
+</p>
+
+Treffen is an agent-first CLI for preparing better meetings. It turns a meeting outcome and participant list into typed EDSL surveys and adaptive interviews, person-specific links and QR codes, evidence-backed synthesis, focused agendas and pre-reads, and durable decision records—while supporting both expected and confirmed attendance.
+
+[GitHub](https://github.com/expectedparrot/treffen) · [Tutorial](https://expectedparrot.github.io/treffen/)
+
 ## Umriss
 
 <p align="center">
