@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Expected Parrot CLI packages</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="catalog.css" />
+</head>
+<body>
+<section id="expected-parrot-cli-packages" class="level1">
+<h1>Expected Parrot CLI packages</h1>
+<p><a href="https://expectedparrot.github.io/directory/">Browse the
+visual package directory</a> · <a
+href="https://github.com/expectedparrot/directory/blob/main/docs/index.html">View
+the HTML source</a></p>
+<p>This is a catalog of standalone Python command-line packages from <a
+href="https://www.expectedparrot.com/">Expected Parrot</a>. Expected
+Parrot builds open tools for designing, running, and analyzing
+AI-powered research. Its packages help researchers and coding agents
+turn methods such as qualitative coding, conjoint analysis, scenario
+planning, survey validation, and decision analysis into explicit,
+reproducible workflows.</p>
+<p>Many of these tools use <a
+href="https://github.com/expectedparrot/edsl">EDSL</a>, Expected
+Parrot's Python library for constructing AI-powered surveys and
+experiments. EDSL provides composable objects for questions, surveys,
+scenarios, agents, and language models, making it possible to specify a
+study in code, run it with large numbers of simulated respondents, and
+analyze the resulting structured data.</p>
+<p>The packages below sit one level above that foundation. Each is a
+focused, agent-friendly CLI with its own repository, package artwork,
+and maintained tutorial. They keep project state and artifacts on disk
+so work can be inspected, repeated, reviewed, and
+version-controlled.</p>
+<section id="bewley" class="level2">
+<h2>Bewley</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/bewley"><img src="https://raw.githubusercontent.com/expectedparrot/bewley/main/docs/assets/bewley-package.png" width="640" alt="Bewley package artwork"></a>
+</p>
+
+<p>Bewley is a local-first qualitative-coding CLI for interview
+transcripts and other text corpora. It maintains an auditable history of
+codebooks, span annotations, and memos, supports AI-assisted open coding
+through EDSL, and exports evidence tables, visual explorers, theory
+diagrams, and narrative summaries.</p>
+<p><a href="https://github.com/expectedparrot/bewley">GitHub</a> · <a
+href="https://expectedparrot.github.io/bewley/">Tutorial</a></p>
+</section>
+<section id="green" class="level2">
+<h2>Green</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/green"><img src="https://raw.githubusercontent.com/expectedparrot/green/main/docs/assets/green-conjoint-artwork.png" width="640" alt="Green package artwork"></a>
+</p>
+
+<p>Green is an agent-first toolkit for conjoint analysis and
+discrete-choice experiments. It helps design choice tasks, generate EDSL
+fieldwork, estimate preference models, and produce part-worths,
+willingness-to-pay estimates, market-share simulations, and sensitivity
+analyses.</p>
+<p><a href="https://github.com/expectedparrot/green">GitHub</a> · <a
+href="https://github.com/expectedparrot/green/blob/main/docs/index.html">Tutorial</a></p>
+</section>
+<section id="kahn" class="level2">
+<h2>Kahn</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/kahn"><img src="https://raw.githubusercontent.com/expectedparrot/kahn/main/docs/assets/kahn-package.png" width="640" alt="Kahn package artwork"></a>
+</p>
+
+<p>Kahn is a two-axis strategic scenario-planning CLI. It turns
+environmental forces and critical uncertainties into a scenario matrix,
+develops narratives for the resulting futures, and evaluates strategic
+options across them.</p>
+<p><a href="https://github.com/expectedparrot/kahn">GitHub</a> · <a
+href="https://expectedparrot.github.io/kahn/">Tutorial</a></p>
+</section>
+<section id="katz" class="level2">
+<h2>Katz</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/katz"><img src="https://raw.githubusercontent.com/expectedparrot/katz/main/docs/katz-economist-parrot.png" width="640" alt="Katz package artwork"></a>
+</p>
+
+<p>Katz is a version-aware ledger for reviewing academic manuscripts. It
+anchors human and model-generated findings to manuscript sections and
+Git versions, tracks investigation and resolution history, and produces
+review reports from the resulting issue record.</p>
+<p><a href="https://github.com/expectedparrot/katz">GitHub</a> · <a
+href="https://expectedparrot.github.io/katz/">Tutorial</a></p>
+</section>
+<section id="labeling" class="level2">
+<h2>Labeling</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/labeling"><img src="https://raw.githubusercontent.com/expectedparrot/labeling/master/docs/assets/labeling-parrot.png" width="640" alt="Labeling package artwork"></a>
+</p>
+
+<p>Labeling is an agent-first CLI for reproducible LLM-as-rater
+workflows. It manages datasets, labeling specifications, gold standards,
+rule baselines, multi-rater aggregation, quality metrics, and exports
+while preserving a complete audit trail and an explicit EDSL execution
+boundary.</p>
+<p><a href="https://github.com/expectedparrot/labeling">GitHub</a> · <a
+href="https://expectedparrot.github.io/labeling/">Tutorial</a></p>
+</section>
+<section id="langley" class="level2">
+<h2>Langley</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/langley"><img src="https://raw.githubusercontent.com/expectedparrot/langley/main/docs/assets/langley-package.png" width="640" alt="Langley package artwork"></a>
+</p>
+
+<p>Langley is an agent-first implementation of Richards Heuer's Analysis
+of Competing Hypotheses method. It compares evidence across hypotheses,
+records a durable audit trail, runs sensitivity analysis, and generates
+portable EDSL jobs for AI-assisted analysis.</p>
+<p><a href="https://github.com/expectedparrot/langley">GitHub</a> · <a
+href="https://expectedparrot.github.io/langley/">Tutorial</a></p>
+</section>
+<section id="messick" class="level2">
+<h2>Messick</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/messick"><img src="https://raw.githubusercontent.com/expectedparrot/messick/main/docs/assets/messick-artwork.png" width="640" alt="Messick package artwork"></a>
+</p>
+
+<p>Messick is an agent-first package for pretesting, revising, and
+validating EDSL survey instruments. It tracks intended constructs and
+uses, preserves immutable revisions and evidence provenance, and keeps
+simulation findings distinct from evidence about human respondents.</p>
+<p><a href="https://github.com/expectedparrot/messick">GitHub</a> · <a
+href="https://expectedparrot.github.io/messick/">Tutorial</a></p>
+</section>
+<section id="premortem" class="level2">
+<h2>Premortem</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/premortem"><img src="https://raw.githubusercontent.com/expectedparrot/premortem/main/docs/assets/premortem-mark.png" width="640" alt="Premortem package artwork"></a>
+</p>
+
+<p>Premortem facilitates a structured, Gary Klein-style pre-mortem for a
+decision, project, launch, or strategy. It elicits failure modes from
+stakeholder personas, builds and scores a causal graph, develops
+mitigations and a research agenda, and renders a final report.</p>
+<p><a href="https://github.com/expectedparrot/premortem">GitHub</a> · <a
+href="https://expectedparrot.github.io/premortem/">Tutorial</a></p>
+</section>
+<section id="umriss" class="level2">
+<h2>Umriss</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/umriss"><img src="https://raw.githubusercontent.com/expectedparrot/umriss/main/docs/assets/umriss-art.png" width="640" alt="Umriss package artwork"></a>
+</p>
+
+<p>Umriss is an agent-facing CLI for constructing auditable digital
+twins from published survey marginals. It builds candidate personas,
+calibrates their weights to known population responses, and evaluates
+the resulting synthetic population against held-out survey items.</p>
+<p><a href="https://github.com/expectedparrot/umriss">GitHub</a> · <a
+href="https://expectedparrot.github.io/umriss/">Tutorial</a></p>
+</section>
+<section id="voting" class="level2">
+<h2>Voting</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/voting"><img src="https://raw.githubusercontent.com/expectedparrot/voting/main/docs/assets/voting-mark.png" width="640" alt="Voting package artwork"></a>
+</p>
+
+<p>Voting is a JSON-first toolkit for preference research and
+group-decision analysis. It collects ballots from people or AI personas
+and compares single- and multi-winner counting rules across plurality,
+ranked, approval, score, grade, allocation, and Condorcet method
+families.</p>
+<p><a href="https://github.com/expectedparrot/voting">GitHub</a> · <a
+href="https://expectedparrot.github.io/voting/">Tutorial</a></p>
+</section>
+<section id="zugunruhe" class="level2">
+<h2>Zugunruhe</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/zugunruhe"><img src="https://raw.githubusercontent.com/expectedparrot/zugunruhe/main/assets/readme-artwork.png" width="640" alt="Zugunruhe package artwork"></a>
+</p>
+
+<p>Zugunruhe is an agent-focused migration CLI for moving Qualtrics and
+SurveyMonkey instruments to EDSL and Expected Parrot. It provides a
+staged, machine-readable workflow for capture, conversion, validation,
+review, and export.</p>
+<p><a href="https://github.com/expectedparrot/zugunruhe">GitHub</a> · <a
+href="https://expectedparrot.github.io/zugunruhe/">Tutorial</a></p>
+</section>
+<section id="zwicky" class="level2">
+<h2>Zwicky</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/zwicky"><img src="https://raw.githubusercontent.com/expectedparrot/zwicky/main/docs/assets/zwicky-morphological-parrots.png" width="640" alt="Zwicky package artwork"></a>
+</p>
+
+<p>Zwicky is a general morphological-analysis CLI for exploring product
+and feature design spaces. It defines dimensions and values, generates
+configurations, applies constraints, and supports AI- and human-assisted
+evaluation, Pareto analysis, and concept selection.</p>
+<p><a href="https://github.com/expectedparrot/zwicky">GitHub</a> · <a
+href="https://expectedparrot.github.io/zwicky/">Tutorial</a></p>
+</section>
+<section id="zwill" class="level2">
+<h2>Zwill</h2>
+<p align="center">
+  <a href="https://github.com/expectedparrot/zwill"><img src="https://raw.githubusercontent.com/expectedparrot/zwill/main/docs/assets/zwill-package.png" width="640" alt="Zwill package artwork"></a>
+</p>
+
+<p>Zwill is an open validation harness for survey digital twins. It
+builds twin prompts and EDSL jobs, records inference artifacts, and
+evaluates individual- and aggregate-level predictive performance against
+observed survey responses and conventional baselines.</p>
+<p><a href="https://github.com/expectedparrot/zwill">GitHub</a> · <a
+href="https://expectedparrot.github.io/zwill/">Tutorial</a></p>
+</section>
+</section>
+</body>
+</html>
