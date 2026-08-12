@@ -18,6 +18,16 @@ Bewley is a local-first qualitative-coding CLI for interview transcripts and oth
 
 [GitHub](https://github.com/expectedparrot/bewley) · [Tutorial](https://expectedparrot.github.io/bewley/)
 
+## Dewey
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/dewey"><img src="https://raw.githubusercontent.com/expectedparrot/dewey/main/assets/dewey-literature-parrot.png" width="640" alt="Dewey package artwork"></a>
+</p>
+
+Dewey is an agent-facing CLI for auditable literature reviews. It manages papers, rendered text, short summaries, discovery and citation provenance, staged screening decisions, source relationships, searchable project state, interactive review explorers, and portable full-project archives.
+
+[GitHub](https://github.com/expectedparrot/dewey) · [Tutorial](https://expectedparrot.github.io/dewey/)
+
 ## Green
 
 <p align="center">
