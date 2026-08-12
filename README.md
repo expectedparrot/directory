@@ -38,6 +38,16 @@ Dewey is an agent-facing CLI for auditable literature reviews. It manages papers
 
 [GitHub](https://github.com/expectedparrot/dewey) · [Tutorial](https://expectedparrot.github.io/dewey/)
 
+## Flyvbjerg
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/flyvbjerg"><img src="https://raw.githubusercontent.com/expectedparrot/flyvbjerg/main/docs/flyvbjerg-art.png" width="640" alt="Flyvbjerg package artwork"></a>
+</p>
+
+Flyvbjerg is an agent-facing CLI for reference-class forecasting and outside-view analysis. It preserves comparable cases, sources, events, claims, metrics, missingness, dependence clusters, and frozen analyses in an auditable evidence ledger, turning accepted observations into defensible reference-class distributions.
+
+[GitHub](https://github.com/expectedparrot/flyvbjerg) · [Tutorial](https://expectedparrot.github.io/flyvbjerg/)
+
 ## Green
 
 <p align="center">
