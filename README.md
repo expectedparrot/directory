@@ -78,6 +78,16 @@ Langley is an agent-first implementation of Richards Heuer's Analysis of Competi
 
 [GitHub](https://github.com/expectedparrot/langley) · [Tutorial](https://expectedparrot.github.io/langley/)
 
+## MCDA
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/mcda"><img src="https://raw.githubusercontent.com/expectedparrot/mcda/main/docs/figures/office_lease_candidate_ranking.png" width="640" alt="MCDA candidate-ranking analysis"></a>
+</p>
+
+MCDA is an agent-first, JSON-enveloped CLI for multi-criteria decision analysis. It records participants, alternatives, criteria, weights, thresholds, and performance assessments, then compares options using transparent weighted-sum or ELECTRE III analysis while preserving auditable project state.
+
+[GitHub](https://github.com/expectedparrot/mcda) · [Tutorial](https://github.com/expectedparrot/mcda#full-example-choosing-an-office-lease)
+
 ## Messick
 
 <p align="center">
