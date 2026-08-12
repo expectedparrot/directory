@@ -8,6 +8,16 @@ Many of these tools use [EDSL](https://github.com/expectedparrot/edsl), Expected
 
 The packages below sit one level above that foundation. Each is a focused, agent-friendly CLI with its own repository, package artwork, and maintained tutorial. They keep project state and artifacts on disk so work can be inspected, repeated, reviewed, and version-controlled.
 
+## Aivis
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/aivis"><img src="https://raw.githubusercontent.com/expectedparrot/aivis/main/assets/aivis-overview.png" width="640" alt="Aivis AI brand-visibility measurement overview"></a>
+</p>
+
+Aivis is an agent-facing CLI for measuring how brands and competitors appear in AI-generated answers. It administers a reusable prompt library across models, extracts tracked-brand observations with an EDSL judge, and stores deterministic time-series records for share of voice, mention rate, recommendations, sentiment, and citation influence.
+
+[GitHub](https://github.com/expectedparrot/aivis) · [Tutorial](https://github.com/expectedparrot/aivis#install-and-quickstart)
+
 ## Bewley
 
 <p align="center">
