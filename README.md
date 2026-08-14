@@ -98,6 +98,16 @@ Langley is an agent-first implementation of Richards Heuer's Analysis of Competi
 
 [GitHub](https://github.com/expectedparrot/langley) · [Tutorial](https://expectedparrot.github.io/langley/)
 
+## McCall
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/mccall"><img src="https://raw.githubusercontent.com/expectedparrot/mccall/main/assets/mccall-job-post-artwork.png" width="640" alt="McCall job-post testing artwork"></a>
+</p>
+
+McCall is an agent-facing CLI for pretesting and refining job posts with EDSL candidate simulations. It preserves role requirements, post variants, persona provenance, portable Jobs and Results, and controlled comparisons so hiring teams can see how different candidate types interpret a post before publishing it.
+
+[GitHub](https://github.com/expectedparrot/mccall) · [Tutorial](https://expectedparrot.github.io/mccall/)
+
 ## MCDA
 
 <p align="center">
