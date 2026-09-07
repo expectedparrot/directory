@@ -6,7 +6,7 @@ This is a catalog of standalone Python command-line packages from [Expected Parr
 
 Many of these tools use [EDSL](https://github.com/expectedparrot/edsl), Expected Parrot's Python library for constructing AI-powered surveys and experiments. EDSL provides composable objects for questions, surveys, scenarios, agents, and language models, making it possible to specify a study in code, run it with large numbers of simulated respondents, and analyze the resulting structured data.
 
-The packages below sit one level above that foundation. Each is a focused, agent-friendly CLI with its own repository, package artwork, and maintained tutorial. They keep project state and artifacts on disk so work can be inspected, repeated, reviewed, and version-controlled.
+The packages below sit one level above that foundation. They include focused, agent-friendly CLIs and supporting libraries, with links to their repositories and available tutorials or documentation. They keep project state and artifacts on disk so work can be inspected, repeated, reviewed, and version-controlled.
 
 ## Aivis
 
@@ -27,6 +27,12 @@ Aivis is an agent-facing CLI for measuring how brands and competitors appear in 
 Bewley is a local-first qualitative-coding CLI for interview transcripts and other text corpora. It maintains an auditable history of codebooks, span annotations, and memos, supports AI-assisted open coding through EDSL, and exports evidence tables, visual explorers, theory diagrams, and narrative summaries.
 
 [GitHub](https://github.com/expectedparrot/bewley) · [Tutorial](https://expectedparrot.github.io/bewley/)
+
+## Conversation
+
+Conversation is an EDSL-based package for simulating structured, multi-agent conversations. It manages turn-taking, parallel conversation runs, retry behavior, and accumulated results so researchers can study interactions among simulated participants rather than isolated survey responses.
+
+[GitHub](https://github.com/expectedparrot/conversation) · [Documentation](https://github.com/expectedparrot/conversation#readme)
 
 ## Dewey
 
@@ -128,6 +134,22 @@ Messick is an agent-first package for pretesting, revising, and validating EDSL 
 
 [GitHub](https://github.com/expectedparrot/messick) · [Tutorial](https://expectedparrot.github.io/messick/)
 
+## Niles
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/niles"><img src="https://raw.githubusercontent.com/expectedparrot/niles/master/docs/assets/niles-artwork.png" width="640" alt="Niles package artwork"></a>
+</p>
+
+Niles is a local-first CRM CLI for relationship work. It manages contacts, interaction notes, follow-up tasks, teammates, materials, surveys, human intake, and reviewed model recommendations through a machine-readable interface.
+
+[GitHub](https://github.com/expectedparrot/niles) · [Tutorial](https://expectedparrot.github.io/niles/)
+
+## Oneheart
+
+Oneheart is a CLI for designing and recording Concordia-backed multi-agent social simulations. It manages study definitions, agents, treatments, measurements, generated pilot code, run records, and outcome exports for research on agent interactions.
+
+[GitHub](https://github.com/expectedparrot/oneheart) · [Tutorial](https://expectedparrot.github.io/oneheart/)
+
 ## Premortem
 
 <p align="center">
@@ -137,6 +159,36 @@ Messick is an agent-first package for pretesting, revising, and validating EDSL 
 Premortem facilitates a structured, Gary Klein-style pre-mortem for a decision, project, launch, or strategy. It elicits failure modes from stakeholder personas, builds and scores a causal graph, develops mitigations and a research agenda, and renders a final report.
 
 [GitHub](https://github.com/expectedparrot/premortem) · [Tutorial](https://expectedparrot.github.io/premortem/)
+
+## Pruefung
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/pruefung"><img src="https://raw.githubusercontent.com/expectedparrot/pruefung/main/assets/pruefung-artwork.png" width="640" alt="Pruefung package artwork"></a>
+</p>
+
+Pruefung is an agent-first CLI for building, checking, deploying, and grading quizzes and exams with EDSL-native questions. It stores inspectable project state, returns structured JSON for agent workflows, and keeps model inference behind an explicit make, run, and ingest boundary.
+
+[GitHub](https://github.com/expectedparrot/pruefung) · [Documentation](https://github.com/expectedparrot/pruefung/blob/main/pruefung-spec.md)
+
+## Roth
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/roth"><img src="https://raw.githubusercontent.com/expectedparrot/roth/main/docs/assets/roth-package.png" width="640" alt="Roth package artwork"></a>
+</p>
+
+Roth collects preferences on both sides of a market and computes one-to-one stable matches using deferred acceptance. It supports Humanize ranking surveys, organizer-controlled LLM delegation, optional A-versus-B preference benchmarks, frozen inputs, and reports of realized ranks and unmatched participants.
+
+[GitHub](https://github.com/expectedparrot/roth) · [Tutorial](https://expectedparrot.github.io/roth/)
+
+## Tommy
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/tommy"><img src="https://raw.githubusercontent.com/expectedparrot/tommy/main/docs/assets/tommy-artwork.png" width="640" alt="Tommy package artwork"></a>
+</p>
+
+Tommy is an agent-facing CLI for preparing realistic sales roleplays with Expected Parrot. It preserves practice attempts and transcript-grounded reviews, produces self-contained coaching reports, and guides coding agents through each state transition with deterministic recommended actions.
+
+[GitHub](https://github.com/expectedparrot/tommy) · [Tutorial](https://expectedparrot.github.io/tommy/)
 
 ## Treffen
 
@@ -148,16 +200,6 @@ Treffen is an agent-first CLI for preparing better meetings. It turns a meeting 
 
 [GitHub](https://github.com/expectedparrot/treffen) · [Tutorial](https://expectedparrot.github.io/treffen/)
 
-## UXTest
-
-<p align="center">
-  <a href="https://github.com/expectedparrot/uxtest"><img src="https://raw.githubusercontent.com/expectedparrot/uxtest/main/docs/assets/uxtest-package.png" width="640" alt="UXTest package artwork"></a>
-</p>
-
-UXTest is an agent-first CLI for running synthetic-user UX studies against live web pages. It uses Playwright and EDSL to capture browser journeys, screenshots, traces, and structured findings, preserving an inspectable evidence trail for issue discovery, comparison, and regression testing.
-
-[GitHub](https://github.com/expectedparrot/uxtest) · [Tutorial](https://expectedparrot.github.io/uxtest/)
-
 ## Umriss
 
 <p align="center">
@@ -167,6 +209,16 @@ UXTest is an agent-first CLI for running synthetic-user UX studies against live 
 Umriss is an agent-facing CLI for constructing auditable digital twins from published survey marginals. It builds candidate personas, calibrates their weights to known population responses, and evaluates the resulting synthetic population against held-out survey items.
 
 [GitHub](https://github.com/expectedparrot/umriss) · [Tutorial](https://expectedparrot.github.io/umriss/)
+
+## UXTest
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/uxtest"><img src="https://raw.githubusercontent.com/expectedparrot/uxtest/main/docs/assets/uxtest-package.png" width="640" alt="UXTest package artwork"></a>
+</p>
+
+UXTest is an agent-first CLI for running synthetic-user UX studies against live web pages. It uses Playwright and EDSL to capture browser journeys, screenshots, traces, and structured findings, preserving an inspectable evidence trail for issue discovery, comparison, and regression testing.
+
+[GitHub](https://github.com/expectedparrot/uxtest) · [Tutorial](https://expectedparrot.github.io/uxtest/)
 
 ## Voting
 
