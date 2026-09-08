@@ -193,7 +193,7 @@ Roth collects preferences on both sides of a market and computes one-to-one stab
 ## Rudin
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/rudin"><img src="https://raw.githubusercontent.com/expectedparrot/rudin/main/docs/assets/rudin-artwork.png" width="640" alt="Rudin artwork: a geometric parrot inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/rudin"><img src="docs/assets/rudin-artwork.png" width="640" alt="Rudin artwork: a geometric parrot inside expectation brackets"></a>
 </p>
 
 Rudin is a local-first CLI for designing transparent scoring models. It turns domain rubrics into manual or learned integer scorecards, scores structured answers, and exports EDSL surveys and portable artifacts. Its worked LaTeX manual develops rubric design, fitting, threshold selection, and held-out evaluation through executable synthetic examples.
