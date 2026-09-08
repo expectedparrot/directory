@@ -18,6 +18,16 @@ Aivis is an agent-facing CLI for measuring how brands and competitors appear in 
 
 [GitHub](https://github.com/expectedparrot/aivis) · [Tutorial](https://github.com/expectedparrot/aivis#install-and-quickstart)
 
+## Ariel
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/ariel"><img src="https://raw.githubusercontent.com/expectedparrot/ariel/main/assets/ariel.png" width="640" alt="Ariel artwork: two parrots dividing a seed cake"></a>
+</p>
+
+Ariel is an agent-first fair-division package for rent, indivisible goods, bivalued chores, project credit, and shared fares. It combines local mathematical solvers and explicit verification with EDSL participation by humans or simulated subjects, preserves original evidence, and keeps post-allocation reactions separate from submitted inputs. Its state-aware `next` command guides agents through problem setup and execution.
+
+[GitHub](https://github.com/expectedparrot/ariel) · [Tutorial](https://github.com/expectedparrot/ariel#install-and-try-the-offline-example)
+
 ## Bewley
 
 <p align="center">
