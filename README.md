@@ -94,6 +94,18 @@ Katz is a version-aware ledger for reviewing academic manuscripts. It anchors hu
 
 [GitHub](https://github.com/expectedparrot/katz) · [Tutorial](https://expectedparrot.github.io/katz/)
 
+## Kean
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/kean"><img src="docs/assets/kean-artwork.png" width="640" alt="Kean artwork: a green parrot detective in a fedora and trench coat"></a>
+</p>
+
+Kean is an agent-first CLI for evidence-backed event graphs on an ordinary epiq database. It records occurrences, participants, and supported relations, then exposes bitemporal timelines, auditable paths, response delays, unexplained events, and contested claims. Deterministic JSON, DOT, and HTML exports preserve claim and evidence lineage.
+
+[GitHub (private)](https://github.com/expectedparrot/kean) · [Documentation (access required)](https://github.com/expectedparrot/kean#readme)
+
+Local checkout: `~/tools/ep/kean`.
+
 ## Labeling
 
 <p align="center">
