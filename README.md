@@ -74,6 +74,16 @@ Green is an agent-first toolkit for conjoint analysis and discrete-choice experi
 
 [GitHub](https://github.com/expectedparrot/green) · [Tutorial](https://github.com/expectedparrot/green/blob/main/docs/index.html)
 
+## Golden
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/golden"><img src="https://raw.githubusercontent.com/expectedparrot/golden/main/docs/assets/golden-artwork.png" width="640" alt="Golden artwork: an Expected Parrot evaluating product ratings"></a>
+</p>
+
+Golden is an agent-first CLI for evidence-backed consumer decisions. It combines structured preference interviews, explicit constraints, sourced product research, sensitivity analysis, and an interactive utility-versus-price explorer to help consumers make transparent, auditable choices.
+
+[GitHub](https://github.com/expectedparrot/golden) · [Tutorial](https://github.com/expectedparrot/golden/blob/main/docs/index.html)
+
 ## Kahn
 
 <p align="center">
@@ -261,6 +271,12 @@ UXTest is an agent-first CLI for running synthetic-user UX studies against live 
 Voting is a JSON-first toolkit for preference research and group-decision analysis. It collects ballots from people or AI personas and compares single- and multi-winner counting rules across plurality, ranked, approval, score, grade, allocation, and Condorcet method families.
 
 [GitHub](https://github.com/expectedparrot/voting) · [Tutorial](https://expectedparrot.github.io/voting/)
+
+## Zitate
+
+Zitate is an agent-facing CLI for auditing whether academic sources support manuscript claims. It inventories citations, preserves the source material and exact evidence used for each judgment, and produces an auditable report without silently modifying the manuscript or treating metadata and search snippets as substantive support.
+
+[GitHub](https://github.com/expectedparrot/zitate) · [Documentation](https://github.com/expectedparrot/zitate#readme)
 
 ## Zugunruhe
 
