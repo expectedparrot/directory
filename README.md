@@ -84,6 +84,16 @@ Golden is an agent-first CLI for evidence-backed consumer decisions. It combines
 
 [GitHub](https://github.com/expectedparrot/golden) · [Tutorial](https://github.com/expectedparrot/golden/blob/main/docs/index.html)
 
+## Helmer
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/helmer"><img src="https://raw.githubusercontent.com/expectedparrot/helmer/main/docs/assets/helmer-artwork.png" width="640" alt="Helmer artwork: a laurel-crowned parrot at the oracle of Delphi inside expectation brackets"></a>
+</p>
+
+Helmer is an agent-first CLI for Delphi expert elicitation. It collects numerical estimates and ratings across repeated rounds, gives each expert anonymous group feedback and their own previous answers, and reports consensus, stability, attrition, and remaining disagreement. It preserves study history, exchanges native EDSL instruments and Results, and supports small workflow pilots with separate participant roles.
+
+[GitHub](https://github.com/expectedparrot/helmer) · [Tutorial](https://github.com/expectedparrot/helmer/blob/main/docs/tutorial.md)
+
 ## Kahn
 
 <p align="center">
