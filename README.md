@@ -64,6 +64,16 @@ Bewley is a local-first qualitative-coding CLI for interview transcripts and oth
 
 [GitHub](https://github.com/expectedparrot/bewley) · [Tutorial](https://expectedparrot.github.io/bewley/)
 
+### Bower
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/bower"><img src="docs/assets/bower-artwork.jpg" width="640" alt="Bower artwork: a green parrot consultant in a suit and glasses holding an analysis tablet, inside expectation brackets"></a>
+</p>
+
+Bower is a CLI for hypothesis-driven stakeholder studies. It records firm context and sourced information about people, captures the commissioning brief, and designs customized interviews to test hypotheses. Human surveys and synthetic personas run through EDSL; Bower registers the returned results, preserves provenance, and links findings to evidence and follow-up work.
+
+[GitHub](https://github.com/expectedparrot/bower) · [Documentation](https://github.com/expectedparrot/bower#readme) · [HTML walkthrough](https://github.com/expectedparrot/bower/blob/main/docs/index.html)
+
 ### Conversation
 
 Conversation is an EDSL-based package for simulating structured, multi-agent conversations. It manages turn-taking, parallel conversation runs, retry behavior, and accumulated results so researchers can study interactions among simulated participants rather than isolated survey responses.
