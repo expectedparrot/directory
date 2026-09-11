@@ -288,6 +288,12 @@ UXTest is an agent-first CLI for running synthetic-user UX studies against live 
 
 [GitHub](https://github.com/expectedparrot/uxtest) · [Tutorial](https://expectedparrot.github.io/uxtest/)
 
+### Vorhersage
+
+Vorhersage is a forecasting workbench for agents. It turns binary-event questions into durable research workflows, preserving source provenance, probability judgments, reviews, revisions, and outcomes. It integrates with Epiq, supports optional scenario mixtures and related-question checks, and provides configurable monitoring and matched forecast evaluation.
+
+[GitHub](https://github.com/expectedparrot/vorhersage) · [Documentation](https://expectedparrot.github.io/vorhersage/)
+
 ### Voting
 
 <p align="center">
