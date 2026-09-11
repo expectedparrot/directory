@@ -1,0 +1,98 @@
+{
+  "type": "causal_study_proposal",
+  "version": 1,
+  "name": "manual-negotiation",
+  "question": {
+    "text": "Does a larger private budget increase agreement?",
+    "population": "Simulated buyer-seller pairs",
+    "setting": "One conversation about a single item",
+    "hypotheses": ["A larger buyer budget increases agreement."]
+  },
+  "roles": [
+    {
+      "name": "buyer",
+      "goal": "Buy the item at a satisfactory price",
+      "constraints": ["Do not agree to pay above your budget"],
+      "executor": {"kind": "llm", "model_policy": "study-default"}
+    },
+    {
+      "name": "seller",
+      "goal": "Sell the item at a satisfactory price",
+      "constraints": ["Do not agree to sell below your cost"],
+      "executor": {"kind": "llm", "model_policy": "study-default"}
+    }
+  ],
+  "variables": [
+    {
+      "name": "buyer_budget", "kind": "cause",
+      "type": "continuous", "units": "USD",
+      "description": "Maximum amount the buyer may pay",
+      "scope": {"role": "buyer"},
+      "treatment_mode": "attribute", "treatments": [10, 20],
+      "instruction": "Your maximum budget is {{ value }} USD.",
+      "known_by": ["buyer"]
+    },
+    {
+      "name": "seller_cost", "kind": "cause",
+      "type": "continuous", "units": "USD",
+      "description": "Minimum amount the seller will accept",
+      "scope": {"role": "seller"},
+      "treatment_mode": "attribute", "treatments": [8, 14],
+      "instruction": "Your minimum acceptable price is {{ value }} USD.",
+      "known_by": ["seller"]
+    },
+    {
+      "name": "agreement", "kind": "outcome",
+      "type": "binary", "units": "indicator", "levels": [0, 1],
+      "description": "Whether an explicit sale agreement was reached",
+      "measure": {
+        "role": "buyer",
+        "question": {"type": "yes_no", "text": "Did both parties explicitly agree to a sale?"},
+        "aggregation": "single", "missing": "error"
+      }
+    },
+    {
+      "name": "price", "kind": "outcome",
+      "type": "continuous", "units": "USD",
+      "description": "Price explicitly agreed by both parties",
+      "applicable_when": {"variable": "agreement", "equals": 1},
+      "measure": {
+        "role": "buyer",
+        "question": {"type": "numeric", "text": "What price was agreed?", "min": 0, "max": 20},
+        "missing": "allow_if_not_applicable"
+      }
+    }
+  ],
+  "causal_model": {
+    "relationships": [
+      {"outcome": "agreement", "causes": ["buyer_budget", "seller_cost"]},
+      {"outcome": "price", "causes": ["buyer_budget", "seller_cost"]}
+    ]
+  },
+  "interaction": {
+    "scenario": "A buyer and seller negotiate the sale of one item.",
+    "roles": ["buyer", "seller"],
+    "turns": {"kind": "ordered", "order": ["buyer", "seller"]},
+    "termination": {
+      "max_turns": 6,
+      "when": "Both parties explicitly agree to a sale, or declare an impasse",
+      "judge": "conversation-coordinator"
+    },
+    "instructions": {"*": "Make one concise contribution per turn."},
+    "transcript": "public",
+    "include_remaining_turns": true
+  },
+  "design": {"kind": "factorial", "replications": 2, "seed": "manual-v1"},
+  "analysis": {
+    "effects": [{"cause": "buyer_budget", "outcome": "agreement"}],
+    "estimator": "linear_scm", "covariance": "HC3",
+    "models": [{
+      "outcome": "agreement", "factors": ["buyer_budget", "seller_cost"],
+      "interactions": [["buyer_budget", "seller_cost"]],
+      "family": "linear_probability", "intercept": true,
+      "status": "confirmatory"
+    }]
+  },
+  "requirements": [{"kind": "roles_must_speak", "roles": ["buyer", "seller"]}],
+  "metadata": {"purpose": "Manual example; two replications are an execution fixture, not a powered study"}
+}

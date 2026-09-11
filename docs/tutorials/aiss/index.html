@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A worked AISS tutorial: turn a bargaining hypothesis into a controlled negotiation study, private agent instructions, observed outcomes, and an auditable analysis.">
+<title>AISS · A question, an experiment, a result</title>
+<style>
+:root{--paper:#faf9f3;--ink:#193a30;--muted:#566a61;--green:#08704e;--line:#d5ded5;--wash:#eaf1e7;--gold:#e9bd56;--white:#fff;--code:#142c26}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--green);text-underline-offset:4px}a:hover{color:#104937}button,select{font:inherit}a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.skip{position:absolute;left:20px;top:-80px;background:#fff;padding:12px;z-index:3}.skip:focus{top:10px}.topbar{max-width:1240px;margin:auto;padding:22px 36px;display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line);font-size:14px}.brand{font-weight:800;letter-spacing:.13em;text-decoration:none}.toplinks{display:flex;gap:24px;flex-wrap:wrap}.hero{max-width:1240px;margin:0 auto;padding:76px 36px 66px;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:50px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin:0 0 20px}h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.13;letter-spacing:-.025em}h1{font-size:clamp(42px,5.4vw,70px);margin:0 0 24px}h2{font-size:clamp(29px,3.5vw,40px);margin:0 0 24px}h3{font-size:24px;margin:30px 0 12px}.lede{font-size:20px;line-height:1.6;color:var(--muted)}.hero figure{margin:0}.hero img{width:100%;height:auto;display:block;background:white;border:1px solid var(--line);border-radius:12px}.hero figcaption{font-size:12px;line-height:1.5;color:var(--muted);margin-top:10px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{display:inline-block;text-decoration:none;padding:11px 18px;border-radius:6px;border:1px solid var(--green);font-weight:650;font-size:14px}.button.primary{background:var(--green);color:white}.ribbon{max-width:1168px;margin:0 auto 60px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;display:flex;flex-wrap:wrap;gap:10px 30px;color:var(--muted);font-size:14px}.ribbon strong{color:var(--ink)}.layout{max-width:1240px;margin:auto;padding:0 36px 80px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:66px}aside nav{position:sticky;top:28px;font-size:14px}aside ol{list-style:none;padding:0;margin:0}aside li{margin:0 0 10px}aside a{text-decoration:none;color:var(--muted)}aside a:hover{color:var(--green)}aside .nav-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin:0 0 18px}main{min-width:0;max-width:820px}main section{border-top:1px solid var(--line);padding:38px 0 28px}main section:first-child{border:0;padding-top:0}.step{font:700 12px/1.4 system-ui,sans-serif;letter-spacing:.13em;color:var(--green);text-transform:uppercase;margin:0 0 12px}p{margin:0 0 20px}li{margin-bottom:8px}code{font: .85em/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;background:#e8eee7;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}.code-block{position:relative;margin:22px 0}.code-block pre{margin:0;border-radius:9px;background:var(--code);color:#e6f0e7;padding:24px;overflow-x:auto;tab-size:4}.code-block code{font-size:13px;line-height:1.75;padding:0;background:none;color:inherit;white-space:pre;overflow-wrap:normal}.code-block:has(.copy) pre{padding-top:49px}.copy{position:absolute;top:10px;right:12px;padding:3px 10px;font-size:12px;background:#29483d;color:#fff;border:1px solid #60766b;border-radius:4px;cursor:pointer}.copy:hover{background:#3a5f50}.expected{font-size:12px;font-weight:750;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:20px 0 -12px}.note{padding:20px 24px;background:var(--wash);border-left:3px solid var(--green);margin:24px 0;border-radius:0 8px 8px 0}.note p:last-child{margin-bottom:0}.note.gold{background:#fbf1d8;border-left-color:#b78c2d}.table-wrap{overflow-x:auto;margin:24px 0}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--wash);font-weight:700}tbody tr:last-child td{border-bottom:2px solid var(--line)}.equation{font:20px/1.6 Georgia,serif;background:white;border:1px solid var(--line);padding:24px;text-align:center;border-radius:8px;margin:24px 0}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:24px 0}.flow div{padding:16px 12px;background:var(--wash);font-size:13px;text-align:center;border-radius:6px}.flow span{display:block;font-size:11px;color:var(--muted)}details{margin:24px 0;border:1px solid var(--line);padding:16px 20px;border-radius:8px}summary{cursor:pointer;font-weight:650}details[open] summary{margin-bottom:16px}.explorer{border:1px solid #aec4af;border-radius:10px;padding:24px;margin:28px 0;background:#fff}.explorer-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--green)}.controls{display:flex;flex-wrap:wrap;gap:20px;margin:16px 0 22px}.controls label{flex:1;min-width:170px;font-size:13px;font-weight:650}.controls select{display:block;width:100%;margin-top:6px;background:var(--paper);color:var(--ink);padding:10px;border:1px solid #9aac9d;border-radius:4px}.actors{display:grid;grid-template-columns:1fr 1fr;gap:12px}.actor{background:var(--wash);padding:16px;border-radius:6px}.actor strong{font-size:14px}.actor p{font-size:14px;margin:8px 0 0}.outcome{margin:18px 0 0;padding:16px;border-top:1px solid var(--line);font-size:15px}.small{font-size:13px;color:var(--muted)}.artifact-list td:first-child{white-space:nowrap}.footer{max-width:1168px;margin:0 auto;border-top:1px solid var(--line);padding:25px 0 40px;font-size:13px;color:var(--muted)}
+@media(max-width:960px){.hero{gap:28px;padding-top:50px}.layout{grid-template-columns:180px minmax(0,1fr);gap:32px}.ribbon,.footer{margin-left:36px;margin-right:36px}.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.topbar{padding:18px 20px}.toplinks{gap:12px;font-size:12px}.hero{grid-template-columns:1fr;padding:38px 20px;gap:28px}.hero figure{max-width:500px}.layout{display:block;padding:0 20px 40px}.ribbon{margin:0 20px 35px}.ribbon span{width:100%}aside nav{position:static;margin-bottom:36px;padding:20px;background:var(--wash);border-radius:8px}aside ol{columns:2;column-gap:20px}aside li{break-inside:avoid;font-size:12px}.actors{grid-template-columns:1fr}.code-block pre{padding:18px}.code-block code{font-size:12px}.footer{margin:0 20px}.lede{font-size:18px}th,td{padding:10px}main section{padding-top:30px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#tutorial">Skip to tutorial</a>
+<header class="topbar"><a class="brand" href="#">AISS</a><nav class="toplinks" aria-label="Resources"><a href="https://github.com/expectedparrot/aiss">GitHub</a><a href="https://github.com/expectedparrot/aiss/blob/main/docs/manual/aiss-manual.pdf">PDF manual</a><a href="https://expectedparrot.github.io/directory/">Package directory</a></nav></header>
+<div class="hero">
+<div><p class="eyebrow">Expected Parrot / Automated Social Science</p>
+<h1>A question.<br>An experiment.<br>A result.</h1>
+<p class="lede">Build a bargaining study from start to finish. Give agents private information, vary their circumstances, observe their negotiations, and estimate a prespecified effect.</p>
+<div class="actions"><a class="button primary" href="#start">Start the tutorial</a><a class="button" href="examples/negotiation_tutorial.py" download>Download the Python example</a></div></div>
+<figure><img src="assets/aiss-artwork.png" width="1462" height="960" alt="Parrots on a causal diagram connecting buyer budget, seller minimum price, and attachment to whether a deal occurs."><figcaption>The motivating mug study. Below, we work through a smaller two-factor negotiation; the artwork’s estimates are not results of this tutorial.</figcaption></figure>
+</div>
+<div class="ribbon"><span><strong>One complete study</strong> · from design to report</span><span><strong>Offline first</strong> · no credentials needed</span><span><strong>Optional model run</strong> · same design, EDSL execution</span></div>
+<div class="layout">
+<aside><nav aria-label="Tutorial contents"><p class="nav-label">In this walkthrough</p><ol>
+<li><a href="#idea">The research workflow</a></li><li><a href="#start">01 · Set up</a></li><li><a href="#question">02 · State the question</a></li><li><a href="#compile">03 · Compile and inspect</a></li><li><a href="#contrast">04 · Freeze the comparison</a></li><li><a href="#run">05 · Run the negotiations</a></li><li><a href="#results">06 · Read the effect</a></li><li><a href="#report">07 · Keep the evidence</a></li><li><a href="#models">08 · Use a language model</a></li><li><a href="#next">09 · Design the next study</a></li>
+</ol></nav></aside>
+<main id="tutorial">
+<section id="idea"><p class="step">The idea behind AISS</p><h2>Make the hypothesis executable.</h2>
+<p><a href="https://arxiv.org/abs/2404.11794"><em>Automated Social Science: Language Models as Scientist and Subjects</em></a>, by Benjamin S. Manning, Kehang Zhu, and John J. Horton, uses structural causal models to connect hypotheses, agent construction, experiments, and estimation. An LLM can help design a study and participate in its simulations; observations from the interactions provide data for testing the proposed relationships.</p>
+<p>AISS implements those connections on top of EDSL. A study specifies what varies, who knows it, how participants interact, what counts as an outcome, and which comparison will answer the question.</p>
+<div class="flow" aria-label="Research workflow"><div>Specify<span>Question + causal model</span></div><div>Assign<span>Treatments + information</span></div><div>Observe<span>Interactions + measures</span></div><div>Estimate<span>Contrast + evidence</span></div></div>
+<p>We will use one small negotiation throughout. The offline run uses transparent scripted behavior to check the machinery. Step 8 replaces the callbacks with an EDSL model so you can collect model-generated observations.</p></section>
+<section id="start"><p class="step">01 / Set up</p><h2>Start from a source checkout.</h2>
+<p>Use Python 3.12 and <code>uv</code>. The checkout includes the example scripts and the pinned EDSL conversation runtime. If you already have AISS installed locally, start in its repository root and run the sync command.</p>
+<div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="bash">git clone https://github.com/expectedparrot/aiss.git
+cd aiss
+uv sync --locked --extra dev --extra experiments</code></pre></div>
+<p>The companion script is <a href="examples/negotiation_tutorial.py"><code>docs/examples/negotiation_tutorial.py</code></a>. Its proposal is <a href="manual/examples/negotiation.json"><code>docs/manual/examples/negotiation.json</code></a>. All shell commands below run from the repository root.</p>
+<div class="note"><p><strong>What you will produce.</strong> Eight recorded negotiations, a frozen design and analysis plan, typed agreement and price observations, a primary contrast, and a Markdown report. The offline run uses no API keys or provider calls.</p></div></section>
+<section id="question"><p class="step">02 / State the question</p><h2>Does a larger budget increase agreement?</h2>
+<p>A buyer and seller negotiate over one item. The buyer knows its maximum budget. The seller knows its minimum acceptable price, called <code>seller_cost</code> in this example. Neither receives the other participant’s private value before the conversation.</p>
+<div class="table-wrap"><table><caption class="small">The variables in our study</caption><thead><tr><th>Variable</th><th>Role in the study</th><th>Values or definition</th></tr></thead><tbody>
+<tr><td><code>buyer_budget</code></td><td>Assigned cause; buyer-private</td><td>$10 or $20</td></tr><tr><td><code>seller_cost</code></td><td>Assigned cause; seller-private</td><td>$8 or $14</td></tr><tr><td><code>agreement</code></td><td>Primary outcome</td><td>1 for an explicit agreement; 0 otherwise</td></tr><tr><td><code>price</code></td><td>Conditional outcome</td><td>Agreed price, defined only when agreement = 1</td></tr>
+</tbody></table></div>
+<p>Crossing two budgets with two costs gives four treatment cells. Two repetitions per cell give eight negotiations. The actors alternate turns, with a maximum of six utterances and a semantic stopping rule for agreement or impasse.</p>
+<p>The model is <code>agreement ~ buyer_budget + seller_cost + buyer_budget × seller_cost</code>. The interaction permits the budget effect to depend on seller cost. Our primary question concerns the average budget effect across the two cost levels.</p>
+<details><summary>Inspect the complete proposal JSON</summary><p>This is the actual input loaded by the script. Roles, goals, treatments, visibility, instruments, and stopping rules are all part of the specification.</p><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="json">{
+  &quot;type&quot;: &quot;causal_study_proposal&quot;,
+  &quot;version&quot;: 1,
+  &quot;name&quot;: &quot;manual-negotiation&quot;,
+  &quot;question&quot;: {
+    &quot;text&quot;: &quot;Does a larger private budget increase agreement?&quot;,
+    &quot;population&quot;: &quot;Simulated buyer-seller pairs&quot;,
+    &quot;setting&quot;: &quot;One conversation about a single item&quot;,
+    &quot;hypotheses&quot;: [&quot;A larger buyer budget increases agreement.&quot;]
+  },
+  &quot;roles&quot;: [
+    {
+      &quot;name&quot;: &quot;buyer&quot;,
+      &quot;goal&quot;: &quot;Buy the item at a satisfactory price&quot;,
+      &quot;constraints&quot;: [&quot;Do not agree to pay above your budget&quot;],
+      &quot;executor&quot;: {&quot;kind&quot;: &quot;llm&quot;, &quot;model_policy&quot;: &quot;study-default&quot;}
+    },
+    {
+      &quot;name&quot;: &quot;seller&quot;,
+      &quot;goal&quot;: &quot;Sell the item at a satisfactory price&quot;,
+      &quot;constraints&quot;: [&quot;Do not agree to sell below your cost&quot;],
+      &quot;executor&quot;: {&quot;kind&quot;: &quot;llm&quot;, &quot;model_policy&quot;: &quot;study-default&quot;}
+    }
+  ],
+  &quot;variables&quot;: [
+    {
+      &quot;name&quot;: &quot;buyer_budget&quot;, &quot;kind&quot;: &quot;cause&quot;,
+      &quot;type&quot;: &quot;continuous&quot;, &quot;units&quot;: &quot;USD&quot;,
+      &quot;description&quot;: &quot;Maximum amount the buyer may pay&quot;,
+      &quot;scope&quot;: {&quot;role&quot;: &quot;buyer&quot;},
+      &quot;treatment_mode&quot;: &quot;attribute&quot;, &quot;treatments&quot;: [10, 20],
+      &quot;instruction&quot;: &quot;Your maximum budget is {{ value }} USD.&quot;,
+      &quot;known_by&quot;: [&quot;buyer&quot;]
+    },
+    {
+      &quot;name&quot;: &quot;seller_cost&quot;, &quot;kind&quot;: &quot;cause&quot;,
+      &quot;type&quot;: &quot;continuous&quot;, &quot;units&quot;: &quot;USD&quot;,
+      &quot;description&quot;: &quot;Minimum amount the seller will accept&quot;,
+      &quot;scope&quot;: {&quot;role&quot;: &quot;seller&quot;},
+      &quot;treatment_mode&quot;: &quot;attribute&quot;, &quot;treatments&quot;: [8, 14],
+      &quot;instruction&quot;: &quot;Your minimum acceptable price is {{ value }} USD.&quot;,
+      &quot;known_by&quot;: [&quot;seller&quot;]
+    },
+    {
+      &quot;name&quot;: &quot;agreement&quot;, &quot;kind&quot;: &quot;outcome&quot;,
+      &quot;type&quot;: &quot;binary&quot;, &quot;units&quot;: &quot;indicator&quot;, &quot;levels&quot;: [0, 1],
+      &quot;description&quot;: &quot;Whether an explicit sale agreement was reached&quot;,
+      &quot;measure&quot;: {
+        &quot;role&quot;: &quot;buyer&quot;,
+        &quot;question&quot;: {&quot;type&quot;: &quot;yes_no&quot;, &quot;text&quot;: &quot;Did both parties explicitly agree to a sale?&quot;},
+        &quot;aggregation&quot;: &quot;single&quot;, &quot;missing&quot;: &quot;error&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;price&quot;, &quot;kind&quot;: &quot;outcome&quot;,
+      &quot;type&quot;: &quot;continuous&quot;, &quot;units&quot;: &quot;USD&quot;,
+      &quot;description&quot;: &quot;Price explicitly agreed by both parties&quot;,
+      &quot;applicable_when&quot;: {&quot;variable&quot;: &quot;agreement&quot;, &quot;equals&quot;: 1},
+      &quot;measure&quot;: {
+        &quot;role&quot;: &quot;buyer&quot;,
+        &quot;question&quot;: {&quot;type&quot;: &quot;numeric&quot;, &quot;text&quot;: &quot;What price was agreed?&quot;, &quot;min&quot;: 0, &quot;max&quot;: 20},
+        &quot;missing&quot;: &quot;allow_if_not_applicable&quot;
+      }
+    }
+  ],
+  &quot;causal_model&quot;: {
+    &quot;relationships&quot;: [
+      {&quot;outcome&quot;: &quot;agreement&quot;, &quot;causes&quot;: [&quot;buyer_budget&quot;, &quot;seller_cost&quot;]},
+      {&quot;outcome&quot;: &quot;price&quot;, &quot;causes&quot;: [&quot;buyer_budget&quot;, &quot;seller_cost&quot;]}
+    ]
+  },
+  &quot;interaction&quot;: {
+    &quot;scenario&quot;: &quot;A buyer and seller negotiate the sale of one item.&quot;,
+    &quot;roles&quot;: [&quot;buyer&quot;, &quot;seller&quot;],
+    &quot;turns&quot;: {&quot;kind&quot;: &quot;ordered&quot;, &quot;order&quot;: [&quot;buyer&quot;, &quot;seller&quot;]},
+    &quot;termination&quot;: {
+      &quot;max_turns&quot;: 6,
+      &quot;when&quot;: &quot;Both parties explicitly agree to a sale, or declare an impasse&quot;,
+      &quot;judge&quot;: &quot;conversation-coordinator&quot;
+    },
+    &quot;instructions&quot;: {&quot;*&quot;: &quot;Make one concise contribution per turn.&quot;},
+    &quot;transcript&quot;: &quot;public&quot;,
+    &quot;include_remaining_turns&quot;: true
+  },
+  &quot;design&quot;: {&quot;kind&quot;: &quot;factorial&quot;, &quot;replications&quot;: 2, &quot;seed&quot;: &quot;manual-v1&quot;},
+  &quot;analysis&quot;: {
+    &quot;effects&quot;: [{&quot;cause&quot;: &quot;buyer_budget&quot;, &quot;outcome&quot;: &quot;agreement&quot;}],
+    &quot;estimator&quot;: &quot;linear_scm&quot;, &quot;covariance&quot;: &quot;HC3&quot;,
+    &quot;models&quot;: [{
+      &quot;outcome&quot;: &quot;agreement&quot;, &quot;factors&quot;: [&quot;buyer_budget&quot;, &quot;seller_cost&quot;],
+      &quot;interactions&quot;: [[&quot;buyer_budget&quot;, &quot;seller_cost&quot;]],
+      &quot;family&quot;: &quot;linear_probability&quot;, &quot;intercept&quot;: true,
+      &quot;status&quot;: &quot;confirmatory&quot;
+    }]
+  },
+  &quot;requirements&quot;: [{&quot;kind&quot;: &quot;roles_must_speak&quot;, &quot;roles&quot;: [&quot;buyer&quot;, &quot;seller&quot;]}],
+  &quot;metadata&quot;: {&quot;purpose&quot;: &quot;Manual example; two replications are an execution fixture, not a powered study&quot;}
+}</code></pre></div></details>
+<p>A missing price after disagreement means <em>not applicable</em>. Coding it as a zero-dollar sale would change the meaning of the outcome. The proposal’s applicability condition tells the runner to skip that measurement.</p></section>
+<section id="compile"><p class="step">03 / Compile and inspect</p><h2>See exactly what will run.</h2>
+<p>Prepare the study without executing any participant callbacks:</p><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="bash">uv run --locked python docs/examples/negotiation_tutorial.py --prepare-only</code></pre></div>
+<p class="expected">Expected summary · output path omitted</p><div class="code-block"><pre><code data-language="json">{&quot;status&quot;: &quot;prepared&quot;, &quot;sessions&quot;: 8, &quot;backend&quot;: &quot;scripted&quot;}</code></pre></div>
+<p>Look in <code>examples/automated_social_science/runs/tutorial-scripted/</code>. The script writes the proposal, expanded blueprint, compiled experiment, conversation, design, analysis plan, and run configuration. Deterministic compilation validates and expands the specification without asking a model to fill in scientific choices.</p>
+<details><summary>Follow the Python API alongside the commands</summary><p>Run the Python blocks in order in one session started with <code>uv run --locked python</code> from the repository root. The shell commands execute the complete workflow without needing these exploratory blocks.</p><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="python">from docs.examples.negotiation_tutorial import compile_study
+
+proposal, blueprint, study, design, plan = compile_study()
+assert len(study.experiment.replications) == 8
+print(proposal.to_dict()[&quot;question&quot;][&quot;text&quot;])</code></pre></div><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="python">first = study.experiment.replications[0]
+actors = {actor.role: actor for actor in first.participants}
+
+assert set(actors[&quot;buyer&quot;].private_context) == {&quot;buyer_budget&quot;}
+assert set(actors[&quot;seller&quot;].private_context) == {&quot;seller_cost&quot;}
+assert not first.public_context
+print(actors[&quot;buyer&quot;].private_context)
+print(actors[&quot;seller&quot;].private_context)</code></pre></div><p><code>private_context</code> contains the instructions delivered to that role. The study system also retains assigned values for analysis. That does not make all treatment values visible to each actor.</p></details>
+<div class="explorer"><p class="explorer-label">Explore one treatment cell · scripted illustration</p><p>Change the assignments to see the private instructions and the fixture’s response.</p>
+<div class="controls"><label for="budget">Buyer’s budget<select id="budget"><option value="10">$10</option><option value="20">$20</option></select></label><label for="cost">Seller’s minimum price<select id="cost"><option value="8">$8</option><option value="14">$14</option></select></label></div>
+<div class="actors"><div class="actor"><strong>Buyer sees</strong><p id="buyer-view">Your maximum budget is 10 USD.</p></div><div class="actor"><strong>Seller sees</strong><p id="seller-view">Your minimum acceptable price is 8 USD.</p></div></div>
+<p class="outcome" id="cell-outcome" aria-live="polite">Buyer offers $10. Seller accepts. Agreement = 1; price = $10.</p>
+<p class="small">The fixture offers the buyer’s full budget and accepts if it covers the seller’s cost. This rule is deliberately programmed, not a prediction about people or LLMs.</p><noscript><p>The selectors require JavaScript. All four fixture outcomes are listed in Step 6.</p></noscript></div></section>
+<section id="contrast"><p class="step">04 / Freeze the comparison</p><h2>Choose the estimand before the answers.</h2>
+<p>We compare agreement at a $20 budget with agreement at a $10 budget, averaging equally over seller costs. Writing μ(budget, cost) for a cell’s agreement rate:</p>
+<div class="equation">Δ = ½[μ(20, 8) + μ(20, 14)]<br>− ½[μ(10, 8) + μ(10, 14)]</div>
+<p>The contrast gives each high-budget cell weight +0.5 and each low-budget cell weight −0.5. A result of 0.5 means a 50-percentage-point increase in agreement, averaged over these two cost conditions. It is the effect of this $10 budget increase, not an effect per dollar.</p>
+<details><summary>How the script declares this comparison</summary><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="python">from aiss import AnalysisPlanArtifact, ContrastCell, LinearContrastSpec
+
+contrast = LinearContrastSpec(
+    &quot;higher_budget&quot;, &quot;agreement&quot;,
+    [ContrastCell({&quot;buyer_budget&quot;: budget, &quot;seller_cost&quot;: cost}, weight)
+     for budget, weight in [(10, -0.5), (20, 0.5)]
+     for cost in [8, 14]],
+    primary=True,
+    alternative=&quot;greater&quot;,
+)
+plan = AnalysisPlanArtifact(
+    design.specification_hash,
+    models=blueprint.analysis_plan.models,
+    contrasts=[contrast], covariance=&quot;HC3&quot;, missing=&quot;error&quot;,
+)
+plan.validate_against(design)</code></pre></div></details>
+<p><code>AnalysisPlanArtifact</code> binds this contrast and model to the design’s hash. It also declares HC3 covariance, an error on unresolved missing primary outcomes, and the directional alternative “greater.” An exploratory analysis can have its own artifact without changing the experimental design.</p></section>
+<section id="run"><p class="step">05 / Run the negotiations</p><h2>Turn assignments into observations.</h2>
+<div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="bash">uv run --locked python docs/examples/negotiation_tutorial.py</code></pre></div>
+<p>The script gives <code>CausalExperimentRunner</code> the compiled assignments, conversation definition, SQLite store, and speaker, judge, and measurement callbacks. Each buyer offers its budget. Each seller accepts if the offer meets its private minimum; otherwise it declares an impasse. The judge ends the interaction after the seller replies.</p>
+<p>Measurement callbacks read the completed transcript. The runner validates agreement and price, applies the conditional price rule, and saves the observation. The same runner and proposal will be used for the optional model run.</p>
+<p class="expected">Expected first-run summary · output path omitted</p><div class="code-block"><pre><code data-language="json">{
+  &quot;completed&quot;: 8,
+  &quot;fixture_only&quot;: true,
+  &quot;agreement_rate&quot;: 0.75,
+  &quot;higher_budget_estimate&quot;: 0.5,
+  &quot;callbacks_this_run&quot;: 38
+}</code></pre></div>
+<p>Run the command again. The result is unchanged and <code>callbacks_this_run</code> becomes <strong>0</strong>: saved turns, measurements, and completed observations are reused. The 38 callbacks in the first run include speakers, stopping-rule checks, and measurements; they are not 38 participants or model calls.</p>
+<div class="note"><p><strong>Keep run identities stable.</strong> Use the same configuration to resume. A changed backend, replication count, model, source, or analysis requires a fresh <code>--output</code> directory. Use one process per output directory.</p></div></section>
+<section id="results"><p class="step">06 / Read the effect</p><h2>Account for the cells before the coefficient.</h2>
+<div class="table-wrap"><table><caption class="small">Expected scripted outcomes · two negotiations per cell</caption><thead><tr><th>Budget</th><th>Cost</th><th>Agreements</th><th>Agreement rate</th><th>Price</th></tr></thead><tbody><tr><td>$10</td><td>$8</td><td>2 / 2</td><td>1.0</td><td>$10</td></tr><tr><td>$10</td><td>$14</td><td>0 / 2</td><td>0.0</td><td>Not applicable</td></tr><tr><td>$20</td><td>$8</td><td>2 / 2</td><td>1.0</td><td>$20</td></tr><tr><td>$20</td><td>$14</td><td>2 / 2</td><td>1.0</td><td>$20</td></tr></tbody></table></div>
+<p>Six of eight negotiations end in agreement. The low-budget agreement rate is 0.5; the high-budget rate is 1.0. The prespecified difference is therefore <strong>0.5</strong>. The effect is concentrated in the high-cost condition, which is why we allowed an interaction.</p>
+<details><summary>Recompute the contrast from saved observations</summary><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="python">import json
+from pathlib import Path
+from aiss import FactorialAnalysisExecutor
+
+output = Path(&quot;examples/automated_social_science/runs/tutorial-scripted&quot;)
+observations = json.loads((output / &quot;observations.json&quot;).read_text())
+result = FactorialAnalysisExecutor().execute(design, plan, observations)
+comparison = result.to_dict()[&quot;contrasts&quot;][0]
+print(round(comparison[&quot;estimate&quot;], 3))  # 0.5
+print(comparison[&quot;inference_status&quot;])  # zero_variance</code></pre></div></details>
+<div class="note gold"><p><strong>A checked mechanism, not a behavioral finding.</strong> We programmed these decisions. The saturated fit has zero residual variation, so AISS reports <code>inference_status: "zero_variance"</code> with unavailable confidence intervals and p-values. The 0.5 estimate verifies the contrast calculation; it does not establish a population effect.</p></div>
+<p>For a model run, examine transcripts, completion, invalid responses, and missingness before interpreting the fitted contrast. A full conversation is one observation. More turns within the same negotiation do not increase the experimental sample size.</p></section>
+<section id="report"><p class="step">07 / Keep the evidence</p><h2>A result should lead back to its design.</h2>
+<p>The script writes <code>report.md</code> from a verified evidence packet. Its numerical claims come directly from the serialized analysis; a model does not recalculate or invent them.</p>
+<div class="table-wrap"><table class="artifact-list"><thead><tr><th>Artifact</th><th>What it preserves</th></tr></thead><tbody><tr><td><code>proposal.json</code>, <code>blueprint.json</code></td><td>Authored choices and their expanded specification</td></tr><tr><td><code>design.json</code>, <code>analysis_plan.json</code></td><td>Experimental identity and prespecified comparison</td></tr><tr><td><code>experiment.json</code>, <code>conversation.json</code></td><td>Assigned participants, treatment cells, and interaction protocol</td></tr><tr><td><code>configuration.json</code></td><td>Backend, source hash, design and analysis hashes; model settings for live runs</td></tr><tr><td><code>conversations.sqlite</code></td><td>Durable turns, measurements, and completion checkpoints</td></tr><tr><td><code>observations.json</code></td><td>Treatments, outcomes, measurement status, and observation identities</td></tr><tr><td><code>analysis_result.json</code></td><td>Cell means, coefficients, contrasts, and inference status</td></tr><tr><td><code>evidence.json</code>, <code>report.md</code></td><td>Linked design, analysis, results, and a readable report</td></tr></tbody></table></div>
+<details><summary>Build a report through the Python API</summary><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="python">from aiss import ScientificEvidencePacket, DeterministicScientificReport
+
+evidence = ScientificEvidencePacket.build(
+    design, plan, result,
+    execution={&quot;backend&quot;: &quot;scripted&quot;, &quot;fixture_only&quot;: True,
+               &quot;completed_sessions&quot;: len(observations)},
+)
+report = DeterministicScientificReport().render_markdown(
+    evidence, title=&quot;Negotiation tutorial — scripted fixture&quot;,
+)
+print(report)</code></pre></div></details>
+<p>Price is only observed when there is agreement. Comparing prices among successful deals answers a question about selected cases; it is not automatically an unconditional causal effect on price. Keeping the applicability rule in the evidence makes that distinction inspectable.</p></section>
+<section id="models"><p class="step">08 / Use a language model</p><h2>Keep the study. Change the executor.</h2>
+<p>The offline path has checked the treatment delivery, protocol, measurement schema, analysis, and resume behavior. To collect LLM responses, select <code>--backend edsl</code>. The script connects <code>EDSLCausalAdapter.speak</code>, <code>.judge</code>, and <code>.measure</code> to the same runner.</p>
+<p>First prepare a separate 80-session pilot: four cells with 20 replications each. This still makes no model calls.</p><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="bash">uv run --locked python docs/examples/negotiation_tutorial.py \
+  --backend edsl --replications 20 --prepare-only</code></pre></div>
+<p>The new output directory is <code>examples/automated_social_science/runs/tutorial-edsl/</code>. Inspect its proposal, compiled instructions, analysis plan, and configuration. Twenty replications is an example pilot size; choose a sample size and precision target for your substantive study.</p>
+<p>Then configure <code>GOOGLE_API_KEY</code> in a local <code>.env</code> file and execute:</p><div class="code-block"><button class="copy" type="button" aria-label="Copy code">Copy</button><pre><code data-language="bash">uv run --locked --extra experiments --env-file .env python \
+  docs/examples/negotiation_tutorial.py \
+  --backend edsl --replications 20 \
+  --model gemini-2.5-flash-lite --service google</code></pre></div>
+<p><strong>This command makes provider calls.</strong> Each session can require multiple speaker, judge, and measurement calls. Omit <code>--env-file .env</code> if your credentials are already exported. Use a fresh <code>--output</code> for a different model or experiment.</p>
+<p>The script runs sessions sequentially and stops on an execution error, retaining checkpoints. Repeating an unchanged command resumes successful work. A provider call interrupted before its response is saved can be repeated. The conversation path does not yet have the separate session API’s detailed attempt ledger.</p>
+<p>The resulting estimates need not match the fixture, the artwork, or the paper. They describe the selected model under this particular design. Save and review the actual outcomes and transcript evidence before making a claim.</p></section>
+<section id="next"><p class="step">09 / Design the next study</p><h2>Extend the question, not just the prompt.</h2>
+<p>To study attachment to the item, add a seller attribute, its treatment levels and private instruction, a causal relationship, and the intended analysis. Review the enlarged factorial and primary comparison before collecting new observations. The <a href="https://github.com/expectedparrot/aiss/blob/main/examples/automated_social_science/mug_causal_spec.py">405-cell mug specification</a> shows budget, minimum price, and attachment together.</p>
+<p>For model-assisted design, <code>CausalProposalDesigner</code> drafts proposals, obtains structured reviews, and requests bounded revisions. It produces an inspectable draft; it does not launch the participant study. The fitted estimates can later be supplied to a prediction or follow-on design process. Choosing and orchestrating that next experiment remains application work.</p>
+<ul><li><a href="https://github.com/expectedparrot/aiss/blob/main/docs/manual/aiss-manual.pdf">Read the simulation DSL manual</a> for roles, information, joint assignment profiles, and conditional measurements.</li><li><a href="https://github.com/expectedparrot/aiss/blob/main/studies/README.md">Explore eight session studies</a> for sealed bids, private decisions, deterministic settlement, and staged interactions.</li><li><a href="https://github.com/expectedparrot/aiss/blob/main/examples/automated_social_science/author_study.py">Try the proposal-authoring example</a> to use a language model in the scientist role.</li><li><a href="https://github.com/expectedparrot/aiss/blob/main/docs/status.md">Check implementation status</a> for current capabilities and remaining work.</li></ul>
+<p>You now have the complete path: a scientific question becomes a declared experiment, participant-specific information, recorded interactions, a prespecified contrast, and evidence that can be inspected or reused.</p></section>
+</main></div>
+<footer class="footer">AISS · Expected Parrot · <a href="https://github.com/expectedparrot/aiss">Source repository</a> · <a href="https://arxiv.org/abs/2404.11794">Motivating paper</a><br>Source links and cloning require access while the AISS repository is private. The tutorial’s scripted results are executable fixtures.</footer>
+<script>
+const budget = document.querySelector('#budget');
+const cost = document.querySelector('#cost');
+function updateCell() {
+  const b = Number(budget.value), c = Number(cost.value);
+  document.querySelector('#buyer-view').textContent = `Your maximum budget is ${b} USD.`;
+  document.querySelector('#seller-view').textContent = `Your minimum acceptable price is ${c} USD.`;
+  document.querySelector('#cell-outcome').textContent = b >= c
+    ? `Buyer offers $${b}. Seller accepts. Agreement = 1; price = $${b}.`
+    : `Buyer offers $${b}. Seller declines. Agreement = 0; price is not applicable.`;
+}
+budget.addEventListener('change', updateCell);
+cost.addEventListener('change', updateCell);
+document.querySelectorAll('.copy').forEach(button => {
+  button.addEventListener('click', async () => {
+    const text = button.parentElement.querySelector('code').textContent;
+    try {
+      await navigator.clipboard.writeText(text);
+      button.textContent = 'Copied';
+    } catch {
+      const range = document.createRange();
+      range.selectNodeContents(button.parentElement.querySelector('code'));
+      const selection = window.getSelection();
+      selection.removeAllRanges(); selection.addRange(range);
+      button.textContent = 'Selected';
+    }
+    setTimeout(() => { button.textContent = 'Copy'; }, 1800);
+  });
+});
+</script>
+</body></html>
