@@ -26,6 +26,10 @@ Focused, agent-friendly CLIs and supporting libraries for research workflows, wi
 
 ### AISS
 
+<p align="center">
+  <a href="https://github.com/expectedparrot/aiss"><img src="https://raw.githubusercontent.com/expectedparrot/aiss/main/docs/assets/aiss-artwork.png" width="640" alt="AISS artwork: parrots perched on a causal diagram linking buyer budget, seller minimum, and seller love to whether a deal occurs, inside expectation brackets"></a>
+</p>
+
 AISS is a Python package for designing, running, and analyzing AI social science studies with EDSL. It provides serializable research designs, independently versioned analysis plans, causal and factorial analysis, and deterministic scientific reports. Its simulation DSL defines participant roles, private information, treatments, interaction rules, and measurements, with resumable execution and durable attempt tracking.
 
 [GitHub](https://github.com/expectedparrot/aiss) · [Documentation](https://github.com/expectedparrot/aiss#readme) · [Simulation DSL manual (PDF)](https://github.com/expectedparrot/aiss/blob/main/docs/manual/aiss-manual.pdf)
