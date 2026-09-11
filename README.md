@@ -120,6 +120,16 @@ Helmer is an agent-first CLI for Delphi expert elicitation. It collects numerica
 
 [GitHub](https://github.com/expectedparrot/helmer) · [Tutorial](https://github.com/expectedparrot/helmer/blob/main/docs/tutorial.md)
 
+### Ishikawa
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/ishikawa"><img src="https://raw.githubusercontent.com/expectedparrot/ishikawa/main/docs/assets/ishikawa-artwork.png" width="640" alt="Ishikawa artwork: a green parrot drawing a fishbone diagram inside expectation brackets"></a>
+</p>
+
+Ishikawa is an agent-friendly Python CLI for cause-and-effect analysis and fishbone diagrams. It organizes possible causes into categories and nested why chains, records supporting and contradicting evidence, and tracks investigations and corrective actions. JSON project files, SVG diagrams, and searchable HTML reports preserve hypotheses and assessments without treating them as proven root causes.
+
+[GitHub](https://github.com/expectedparrot/ishikawa) · [Documentation](https://github.com/expectedparrot/ishikawa#readme) · [Quickstart](https://github.com/expectedparrot/ishikawa#install-and-try)
+
 ### Kahn
 
 <p align="center">
