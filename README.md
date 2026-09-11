@@ -278,6 +278,16 @@ Rudin is a local-first CLI for designing transparent scoring models. It turns do
 
 [GitHub](https://github.com/expectedparrot/rudin) · [Tutorial](https://expectedparrot.github.io/rudin/) · [Manual (PDF)](https://github.com/expectedparrot/rudin/blob/main/docs/rudin-manual.pdf)
 
+### Spence
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/spence"><img src="https://raw.githubusercontent.com/expectedparrot/spence/main/docs/assets/spence-artwork.png" width="640" alt="Spence artwork: a peacock with its tail fanned inside brackets"></a>
+</p>
+
+Spence is an applicant tracking CLI built on EDSL humanize. It connects job posts, hosted application forms, candidate records, and structured human reviews in one private workspace. It preserves application and review history, tracks hiring stages, and produces candidate reports. The package is a working alpha; live hosted acceptance testing remains outstanding.
+
+[GitHub](https://github.com/expectedparrot/spence) · [Tutorial](https://expectedparrot.github.io/spence/)
+
 ### Tommy
 
 <p align="center">
