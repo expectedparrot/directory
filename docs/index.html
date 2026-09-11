@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Expected Parrot CLI packages</title>
+  <title>Expected Parrot packages</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -26,35 +26,34 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Expected Parrot CLI packages</h1>
+<h1 class="title">Expected Parrot packages</h1>
 </header>
 <section id="expected-parrot-cli-packages" class="level1">
-<h1>Expected Parrot CLI packages</h1>
+<h1>Expected Parrot packages</h1>
 <p><a href="https://expectedparrot.github.io/directory/">Browse the
 visual package directory</a> · <a
 href="https://github.com/expectedparrot/directory/blob/main/docs/index.html">View
 the HTML source</a></p>
-<p>This is a catalog of standalone Python command-line packages from <a
-href="https://www.expectedparrot.com/">Expected Parrot</a>. Expected
-Parrot builds open tools for designing, running, and analyzing
-AI-powered research. Its packages help researchers and coding agents
-turn methods such as qualitative coding, conjoint analysis, scenario
-planning, survey validation, and decision analysis into explicit,
-reproducible workflows.</p>
-<p>Many of these tools use <a
-href="https://github.com/expectedparrot/edsl">EDSL</a>, Expected
-Parrot’s Python library for constructing AI-powered surveys and
-experiments. EDSL provides composable objects for questions, surveys,
-scenarios, agents, and language models, making it possible to specify a
-study in code, run it with large numbers of simulated respondents, and
-analyze the resulting structured data.</p>
-<p>The packages below sit one level above that foundation. They include
-focused, agent-friendly CLIs and supporting libraries, with links to
-their repositories and available tutorials or documentation. They keep
-project state and artifacts on disk so work can be inspected, repeated,
-reviewed, and version-controlled.</p>
-<section id="aivis" class="level2">
-<h2>Aivis</h2>
+<p>This catalog brings together foundational research tools and application packages from <a href="https://www.expectedparrot.com/">Expected Parrot</a>. Expected Parrot builds open tools for designing, running, and analyzing AI-powered research. Start with Epiq for evidence-backed data and EDSL for surveys and model execution, then explore applications for specific research methods and workflows.</p>
+<section id="foundation-packages" class="level2 package-group" aria-labelledby="foundation-heading">
+<h2 id="foundation-heading">Foundation packages</h2>
+<p>Shared tools for storing research evidence and running surveys and experiments.</p>
+<section id="epiq" class="level3 package-card foundation-card">
+<h3>Epiq</h3>
+<p>Epiq is a local-first epistemic database for evidence-backed research. It stores entities, typed questions, source excerpts, and claims in SQLite, preserving the provenance and history behind each answer. Its Python API, CLI, and spreadsheet interface let researchers and application packages build auditable datasets and export them as tables, HTML, or Excel.</p>
+<p><a href="https://github.com/expectedparrot/epiq">GitHub</a> · <a href="https://github.com/expectedparrot/epiq#readme">Documentation</a></p>
+</section>
+<section id="edsl" class="level3 package-card foundation-card">
+<h3>EDSL</h3>
+<p>EDSL (Expected Parrot Domain-Specific Language) is a Python library for designing and running AI-powered surveys and experiments. Its composable questions, surveys, scenarios, agents, and language models support structured research across many respondents and models, with results that can be analyzed, visualized, and shared. It provides the survey and model-execution foundation used by many of the application packages below.</p>
+<p><a href="https://github.com/expectedparrot/edsl">GitHub</a> · <a href="https://docs.expectedparrot.com">Documentation</a> · <a href="https://docs.expectedparrot.com/en/latest/starter_tutorial">Starter tutorial</a></p>
+</section>
+</section>
+<section id="application-packages" class="level2 package-group" aria-labelledby="application-heading">
+<h2 id="application-heading">Application packages</h2>
+<p>Focused, agent-friendly CLIs and supporting libraries for research workflows, with links to their repositories and available tutorials or documentation.</p>
+<section id="aivis" class="level3 package-card">
+<h3>Aivis</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/aivis"><img src="https://raw.githubusercontent.com/expectedparrot/aivis/main/assets/aivis-overview.png" width="640" alt="Aivis AI brand-visibility measurement overview"></a>
 </p>
@@ -66,16 +65,16 @@ rate, recommendations, sentiment, and citation influence.</p>
 <p><a href="https://github.com/expectedparrot/aivis">GitHub</a> · <a
 href="https://github.com/expectedparrot/aivis#install-and-quickstart">Tutorial</a></p>
 </section>
-<section id="ariel" class="level2">
-<h2>Ariel</h2>
+<section id="ariel" class="level3 package-card">
+<h3>Ariel</h3>
 <p align="center">
   <a href="https://github.com/expectedparrot/ariel"><img src="https://raw.githubusercontent.com/expectedparrot/ariel/main/assets/ariel.png" width="640" alt="Ariel artwork: two parrots dividing a seed cake"></a>
 </p>
 <p>Ariel is an agent-first fair-division package for rent, indivisible goods, bivalued chores, project credit, and shared fares. It combines local mathematical solvers and explicit verification with EDSL participation by humans or simulated subjects, preserves original evidence, and keeps post-allocation reactions separate from submitted inputs. Its state-aware <code>next</code> command guides agents through problem setup and execution.</p>
 <p><a href="https://github.com/expectedparrot/ariel">GitHub</a> · <a href="https://github.com/expectedparrot/ariel#install-and-try-the-offline-example">Tutorial</a></p>
 </section>
-<section id="bewley" class="level2">
-<h2>Bewley</h2>
+<section id="bewley" class="level3 package-card">
+<h3>Bewley</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/bewley"><img src="https://raw.githubusercontent.com/expectedparrot/bewley/main/docs/assets/bewley-package.png" width="640" alt="Bewley package artwork"></a>
 </p>
@@ -87,8 +86,8 @@ diagrams, and narrative summaries.</p>
 <p><a href="https://github.com/expectedparrot/bewley">GitHub</a> · <a
 href="https://expectedparrot.github.io/bewley/">Tutorial</a></p>
 </section>
-<section id="conversation" class="level2">
-<h2>Conversation</h2>
+<section id="conversation" class="level3 package-card">
+<h3>Conversation</h3>
 <p>Conversation is an EDSL-based package for simulating structured,
 multi-agent conversations. It manages turn-taking, parallel conversation
 runs, retry behavior, and accumulated results so researchers can study
@@ -98,8 +97,8 @@ responses.</p>
 <a
 href="https://github.com/expectedparrot/conversation#readme">Documentation</a></p>
 </section>
-<section id="dewey" class="level2">
-<h2>Dewey</h2>
+<section id="dewey" class="level3 package-card">
+<h3>Dewey</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/dewey"><img src="https://raw.githubusercontent.com/expectedparrot/dewey/main/assets/dewey-literature-parrot.png" width="640" alt="Dewey package artwork"></a>
 </p>
@@ -111,8 +110,8 @@ archives.</p>
 <p><a href="https://github.com/expectedparrot/dewey">GitHub</a> · <a
 href="https://expectedparrot.github.io/dewey/">Tutorial</a></p>
 </section>
-<section id="flyvbjerg" class="level2">
-<h2>Flyvbjerg</h2>
+<section id="flyvbjerg" class="level3 package-card">
+<h3>Flyvbjerg</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/flyvbjerg"><img src="https://raw.githubusercontent.com/expectedparrot/flyvbjerg/main/docs/flyvbjerg-art.png" width="640" alt="Flyvbjerg package artwork"></a>
 </p>
@@ -124,8 +123,8 @@ defensible reference-class distributions.</p>
 <p><a href="https://github.com/expectedparrot/flyvbjerg">GitHub</a> · <a
 href="https://expectedparrot.github.io/flyvbjerg/">Tutorial</a></p>
 </section>
-<section id="green" class="level2">
-<h2>Green</h2>
+<section id="green" class="level3 package-card">
+<h3>Green</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/green"><img src="https://raw.githubusercontent.com/expectedparrot/green/main/docs/assets/green-conjoint-artwork.png" width="640" alt="Green package artwork"></a>
 </p>
@@ -137,24 +136,24 @@ analyses.</p>
 <p><a href="https://github.com/expectedparrot/green">GitHub</a> · <a
 href="https://github.com/expectedparrot/green/blob/main/docs/index.html">Tutorial</a></p>
 </section>
-<section id="golden" class="level2">
-<h2>Golden</h2>
+<section id="golden" class="level3 package-card">
+<h3>Golden</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/golden"><img src="https://raw.githubusercontent.com/expectedparrot/golden/main/docs/assets/golden-artwork.png" width="640" alt="Golden artwork: an Expected Parrot evaluating product ratings"></a>
 </p>
 <p>Golden is an agent-first CLI for evidence-backed consumer decisions. It combines structured preference interviews, explicit constraints, sourced product research, sensitivity analysis, and an interactive utility-versus-price explorer to help consumers make transparent, auditable choices.</p>
 <p><a href="https://github.com/expectedparrot/golden">GitHub</a> · <a href="https://github.com/expectedparrot/golden/blob/main/docs/index.html">Tutorial</a></p>
 </section>
-<section id="helmer" class="level2">
-<h2>Helmer</h2>
+<section id="helmer" class="level3 package-card">
+<h3>Helmer</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/helmer"><img src="https://raw.githubusercontent.com/expectedparrot/helmer/main/docs/assets/helmer-artwork.png" width="640" alt="Helmer artwork: a laurel-crowned parrot at the oracle of Delphi inside expectation brackets"></a>
 </p>
 <p>Helmer is an agent-first CLI for Delphi expert elicitation. It collects numerical estimates and ratings across repeated rounds, gives each expert anonymous group feedback and their own previous answers, and reports consensus, stability, attrition, and remaining disagreement. It preserves study history, exchanges native EDSL instruments and Results, and supports small workflow pilots with separate participant roles.</p>
 <p><a href="https://github.com/expectedparrot/helmer">GitHub</a> · <a href="https://github.com/expectedparrot/helmer/blob/main/docs/tutorial.md">Tutorial</a></p>
 </section>
-<section id="kahn" class="level2">
-<h2>Kahn</h2>
+<section id="kahn" class="level3 package-card">
+<h3>Kahn</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/kahn"><img src="https://raw.githubusercontent.com/expectedparrot/kahn/main/docs/assets/kahn-package.png" width="640" alt="Kahn package artwork"></a>
 </p>
@@ -165,8 +164,8 @@ options across them.</p>
 <p><a href="https://github.com/expectedparrot/kahn">GitHub</a> · <a
 href="https://expectedparrot.github.io/kahn/">Tutorial</a></p>
 </section>
-<section id="katz" class="level2">
-<h2>Katz</h2>
+<section id="katz" class="level3 package-card">
+<h3>Katz</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/katz"><img src="https://raw.githubusercontent.com/expectedparrot/katz/main/docs/katz-economist-parrot.png" width="640" alt="Katz package artwork"></a>
 </p>
@@ -177,8 +176,8 @@ review reports from the resulting issue record.</p>
 <p><a href="https://github.com/expectedparrot/katz">GitHub</a> · <a
 href="https://expectedparrot.github.io/katz/">Tutorial</a></p>
 </section>
-<section id="kean" class="level2">
-<h2>Kean</h2>
+<section id="kean" class="level3 package-card">
+<h3>Kean</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/kean"><img src="assets/kean-artwork.png" width="640" alt="Kean artwork: a green parrot detective in a fedora and trench coat"></a>
 </p>
@@ -186,8 +185,8 @@ href="https://expectedparrot.github.io/katz/">Tutorial</a></p>
 <p><a href="https://github.com/expectedparrot/kean">GitHub (private)</a> · <a href="https://github.com/expectedparrot/kean#readme">Documentation (access required)</a></p>
 <p>Local checkout: <code>~/tools/ep/kean</code>.</p>
 </section>
-<section id="labeling" class="level2">
-<h2>Labeling</h2>
+<section id="labeling" class="level3 package-card">
+<h3>Labeling</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/labeling"><img src="https://raw.githubusercontent.com/expectedparrot/labeling/master/docs/assets/labeling-parrot.png" width="640" alt="Labeling package artwork"></a>
 </p>
@@ -199,8 +198,8 @@ boundary.</p>
 <p><a href="https://github.com/expectedparrot/labeling">GitHub</a> · <a
 href="https://expectedparrot.github.io/labeling/">Tutorial</a></p>
 </section>
-<section id="langley" class="level2">
-<h2>Langley</h2>
+<section id="langley" class="level3 package-card">
+<h3>Langley</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/langley"><img src="https://raw.githubusercontent.com/expectedparrot/langley/main/docs/assets/langley-package.png" width="640" alt="Langley package artwork"></a>
 </p>
@@ -211,8 +210,8 @@ portable EDSL jobs for AI-assisted analysis.</p>
 <p><a href="https://github.com/expectedparrot/langley">GitHub</a> · <a
 href="https://expectedparrot.github.io/langley/">Tutorial</a></p>
 </section>
-<section id="mccall" class="level2">
-<h2>McCall</h2>
+<section id="mccall" class="level3 package-card">
+<h3>McCall</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/mccall"><img src="https://raw.githubusercontent.com/expectedparrot/mccall/main/assets/mccall-job-post-artwork.png" width="640" alt="McCall job-post testing artwork"></a>
 </p>
@@ -224,8 +223,8 @@ interpret a post before publishing it.</p>
 <p><a href="https://github.com/expectedparrot/mccall">GitHub</a> · <a
 href="https://expectedparrot.github.io/mccall/">Tutorial</a></p>
 </section>
-<section id="mcda" class="level2">
-<h2>MCDA</h2>
+<section id="mcda" class="level3 package-card">
+<h3>MCDA</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/mcda"><img src="https://raw.githubusercontent.com/expectedparrot/mcda/main/docs/mcda-package.png" width="640" alt="MCDA package artwork"></a>
 </p>
@@ -237,8 +236,8 @@ auditable project state.</p>
 <p><a href="https://github.com/expectedparrot/mcda">GitHub</a> · <a
 href="https://github.com/expectedparrot/mcda#full-example-choosing-an-office-lease">Tutorial</a></p>
 </section>
-<section id="messick" class="level2">
-<h2>Messick</h2>
+<section id="messick" class="level3 package-card">
+<h3>Messick</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/messick"><img src="https://raw.githubusercontent.com/expectedparrot/messick/main/docs/assets/messick-artwork.png" width="640" alt="Messick package artwork"></a>
 </p>
@@ -249,8 +248,8 @@ simulation findings distinct from evidence about human respondents.</p>
 <p><a href="https://github.com/expectedparrot/messick">GitHub</a> · <a
 href="https://expectedparrot.github.io/messick/">Tutorial</a></p>
 </section>
-<section id="niles" class="level2">
-<h2>Niles</h2>
+<section id="niles" class="level3 package-card">
+<h3>Niles</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/niles"><img src="https://raw.githubusercontent.com/expectedparrot/niles/master/docs/assets/niles-artwork.png" width="640" alt="Niles package artwork"></a>
 </p>
@@ -261,8 +260,8 @@ machine-readable interface.</p>
 <p><a href="https://github.com/expectedparrot/niles">GitHub</a> · <a
 href="https://expectedparrot.github.io/niles/">Tutorial</a></p>
 </section>
-<section id="oneheart" class="level2">
-<h2>Oneheart</h2>
+<section id="oneheart" class="level3 package-card">
+<h3>Oneheart</h3>
 <p>Oneheart is a CLI for designing and recording Concordia-backed
 multi-agent social simulations. It manages study definitions, agents,
 treatments, measurements, generated pilot code, run records, and outcome
@@ -270,8 +269,8 @@ exports for research on agent interactions.</p>
 <p><a href="https://github.com/expectedparrot/oneheart">GitHub</a> · <a
 href="https://expectedparrot.github.io/oneheart/">Tutorial</a></p>
 </section>
-<section id="premortem" class="level2">
-<h2>Premortem</h2>
+<section id="premortem" class="level3 package-card">
+<h3>Premortem</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/premortem"><img src="https://raw.githubusercontent.com/expectedparrot/premortem/main/docs/assets/premortem-mark.png" width="640" alt="Premortem package artwork"></a>
 </p>
@@ -282,8 +281,8 @@ mitigations and a research agenda, and renders a final report.</p>
 <p><a href="https://github.com/expectedparrot/premortem">GitHub</a> · <a
 href="https://expectedparrot.github.io/premortem/">Tutorial</a></p>
 </section>
-<section id="pruefung" class="level2">
-<h2>Pruefung</h2>
+<section id="pruefung" class="level3 package-card">
+<h3>Pruefung</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/pruefung"><img src="https://raw.githubusercontent.com/expectedparrot/pruefung/main/assets/pruefung-artwork.png" width="640" alt="Pruefung package artwork"></a>
 </p>
@@ -295,8 +294,8 @@ boundary.</p>
 <p><a href="https://github.com/expectedparrot/pruefung">GitHub</a> · <a
 href="https://github.com/expectedparrot/pruefung/blob/main/pruefung-spec.md">Documentation</a></p>
 </section>
-<section id="roth" class="level2">
-<h2>Roth</h2>
+<section id="roth" class="level3 package-card">
+<h3>Roth</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/roth"><img src="https://raw.githubusercontent.com/expectedparrot/roth/main/docs/assets/roth-package.png" width="640" alt="Roth package artwork"></a>
 </p>
@@ -308,8 +307,8 @@ ranks and unmatched participants.</p>
 <p><a href="https://github.com/expectedparrot/roth">GitHub</a> · <a
 href="https://expectedparrot.github.io/roth/">Tutorial</a></p>
 </section>
-<section id="rudin" class="level2">
-<h2>Rudin</h2>
+<section id="rudin" class="level3 package-card">
+<h3>Rudin</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/rudin"><img src="assets/rudin-artwork.png" width="640" alt="Rudin artwork: a geometric parrot inside expectation brackets"></a>
 </p>
@@ -318,8 +317,8 @@ href="https://expectedparrot.github.io/roth/">Tutorial</a></p>
 href="https://expectedparrot.github.io/rudin/">Tutorial</a> · <a
 href="https://github.com/expectedparrot/rudin/blob/main/docs/rudin-manual.pdf">Manual (PDF)</a></p>
 </section>
-<section id="tommy" class="level2">
-<h2>Tommy</h2>
+<section id="tommy" class="level3 package-card">
+<h3>Tommy</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/tommy"><img src="https://raw.githubusercontent.com/expectedparrot/tommy/main/docs/assets/tommy-artwork.png" width="640" alt="Tommy package artwork"></a>
 </p>
@@ -331,8 +330,8 @@ deterministic recommended actions.</p>
 <p><a href="https://github.com/expectedparrot/tommy">GitHub</a> · <a
 href="https://expectedparrot.github.io/tommy/">Tutorial</a></p>
 </section>
-<section id="treffen" class="level2">
-<h2>Treffen</h2>
+<section id="treffen" class="level3 package-card">
+<h3>Treffen</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/treffen"><img src="https://raw.githubusercontent.com/expectedparrot/treffen/main/docs/assets/treffen-package.png" width="640" alt="Treffen package artwork"></a>
 </p>
@@ -344,8 +343,8 @@ records—while supporting both expected and confirmed attendance.</p>
 <p><a href="https://github.com/expectedparrot/treffen">GitHub</a> · <a
 href="https://expectedparrot.github.io/treffen/">Tutorial</a></p>
 </section>
-<section id="umriss" class="level2">
-<h2>Umriss</h2>
+<section id="umriss" class="level3 package-card">
+<h3>Umriss</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/umriss"><img src="https://raw.githubusercontent.com/expectedparrot/umriss/main/docs/assets/umriss-art.png" width="640" alt="Umriss package artwork"></a>
 </p>
@@ -356,8 +355,8 @@ the resulting synthetic population against held-out survey items.</p>
 <p><a href="https://github.com/expectedparrot/umriss">GitHub</a> · <a
 href="https://expectedparrot.github.io/umriss/">Tutorial</a></p>
 </section>
-<section id="uxtest" class="level2">
-<h2>UXTest</h2>
+<section id="uxtest" class="level3 package-card">
+<h3>UXTest</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/uxtest"><img src="https://raw.githubusercontent.com/expectedparrot/uxtest/main/docs/assets/uxtest-package.png" width="640" alt="UXTest package artwork"></a>
 </p>
@@ -369,8 +368,8 @@ regression testing.</p>
 <p><a href="https://github.com/expectedparrot/uxtest">GitHub</a> · <a
 href="https://expectedparrot.github.io/uxtest/">Tutorial</a></p>
 </section>
-<section id="voting" class="level2">
-<h2>Voting</h2>
+<section id="voting" class="level3 package-card">
+<h3>Voting</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/voting"><img src="https://raw.githubusercontent.com/expectedparrot/voting/main/docs/assets/voting-mark.png" width="640" alt="Voting package artwork"></a>
 </p>
@@ -382,8 +381,8 @@ families.</p>
 <p><a href="https://github.com/expectedparrot/voting">GitHub</a> · <a
 href="https://expectedparrot.github.io/voting/">Tutorial</a></p>
 </section>
-<section id="zitate" class="level2">
-<h2>Zitate</h2>
+<section id="zitate" class="level3 package-card">
+<h3>Zitate</h3>
 <p>Zitate is an agent-facing CLI for auditing whether academic sources
 support manuscript claims. It inventories citations, preserves the
 source material and exact evidence used for each judgment, and produces
@@ -392,8 +391,8 @@ treating metadata and search snippets as substantive support.</p>
 <p><a href="https://github.com/expectedparrot/zitate">GitHub</a> · <a
 href="https://github.com/expectedparrot/zitate#readme">Documentation</a></p>
 </section>
-<section id="zugunruhe" class="level2">
-<h2>Zugunruhe</h2>
+<section id="zugunruhe" class="level3 package-card">
+<h3>Zugunruhe</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/zugunruhe"><img src="https://raw.githubusercontent.com/expectedparrot/zugunruhe/main/assets/readme-artwork.png" width="640" alt="Zugunruhe package artwork"></a>
 </p>
@@ -404,8 +403,8 @@ review, and export.</p>
 <p><a href="https://github.com/expectedparrot/zugunruhe">GitHub</a> · <a
 href="https://expectedparrot.github.io/zugunruhe/">Tutorial</a></p>
 </section>
-<section id="zwicky" class="level2">
-<h2>Zwicky</h2>
+<section id="zwicky" class="level3 package-card">
+<h3>Zwicky</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/zwicky"><img src="https://raw.githubusercontent.com/expectedparrot/zwicky/main/docs/assets/zwicky-morphological-parrots.png" width="640" alt="Zwicky package artwork"></a>
 </p>
@@ -416,8 +415,8 @@ evaluation, Pareto analysis, and concept selection.</p>
 <p><a href="https://github.com/expectedparrot/zwicky">GitHub</a> · <a
 href="https://expectedparrot.github.io/zwicky/">Tutorial</a></p>
 </section>
-<section id="zwill" class="level2">
-<h2>Zwill</h2>
+<section id="zwill" class="level3 package-card">
+<h3>Zwill</h3>
 <p align="center">
 <a href="https://github.com/expectedparrot/zwill"><img src="https://raw.githubusercontent.com/expectedparrot/zwill/main/docs/assets/zwill-package.png" width="640" alt="Zwill package artwork"></a>
 </p>
@@ -427,6 +426,7 @@ evaluates individual- and aggregate-level predictive performance against
 observed survey responses and conventional baselines.</p>
 <p><a href="https://github.com/expectedparrot/zwill">GitHub</a> · <a
 href="https://expectedparrot.github.io/zwill/">Tutorial</a></p>
+</section>
 </section>
 </section>
 </body>
