@@ -169,7 +169,7 @@ section.level1 > p,
 
 .foundation-card { border-color: #acd1c2; }
 
-.foundation-card p:first-of-type {
+.foundation-card p:first-of-type:not([align="center"]) {
   order: 3;
   display: block;
   height: auto;
