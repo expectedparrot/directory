@@ -74,6 +74,16 @@ Bower is a CLI for hypothesis-driven stakeholder studies. It records firm contex
 
 [GitHub](https://github.com/expectedparrot/bower) · [Documentation](https://github.com/expectedparrot/bower#readme) · [HTML walkthrough](https://github.com/expectedparrot/bower/blob/main/docs/index.html)
 
+### Burr
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/burr"><img src="docs/assets/burr-artwork.jpg" width="640" alt="Burr artwork: a green parrot perched on a brass stock ticker under a glass dome, inside expectation brackets"></a>
+</p>
+
+Burr is an agent-friendly CLI for driver-based company modeling. It separates business formulas, reported facts, and sourced assumptions; tests scenarios and records findings in an append-only experiment journal. Its guide and next commands lead agents through validation, belief testing, and exports to interactive dashboards, charts, CSV, and verified Excel workbooks.
+
+[GitHub (private)](https://github.com/expectedparrot/burr) · [Documentation (access required)](https://github.com/expectedparrot/burr#readme) · [HTML walkthrough (access required)](https://github.com/expectedparrot/burr/blob/main/docs/index.html) · [Agent guide (access required)](https://github.com/expectedparrot/burr/blob/main/burr/agent_guide.md)
+
 ### Conversation
 
 Conversation is an EDSL-based package for simulating structured, multi-agent conversations. It manages turn-taking, parallel conversation runs, retry behavior, and accumulated results so researchers can study interactions among simulated participants rather than isolated survey responses.
