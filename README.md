@@ -2,33 +2,47 @@
 
 [Browse the visual package directory](https://expectedparrot.github.io/directory/) · [View the HTML source](https://github.com/expectedparrot/directory/blob/main/docs/index.html)
 
-This catalog brings together foundational research tools and application packages from [Expected Parrot](https://www.expectedparrot.com/). Expected Parrot builds open tools for designing, running, and analyzing AI-powered research. Start with Epiq for evidence-backed data, EDSL for surveys and model execution, and AISS for research design and analysis, then explore applications for specific research methods and workflows.
+This catalog brings together foundational research tools and application packages from [Expected Parrot](https://www.expectedparrot.com/). Expected Parrot builds open tools for designing, running, and analyzing AI-powered research. Start with EDSL for surveys and model execution, Epiq for evidence-backed data, AISS for research design and analysis, and Conversation for simulated interactions, then explore applications for specific research methods and workflows.
 
 ## Foundation packages
 
-Shared tools for storing research evidence and running surveys and experiments.
-
-### Epiq
-
-Epiq is a local-first epistemic database for evidence-backed research. It stores entities, typed questions, source excerpts, and claims in SQLite, preserving the provenance and history behind each answer. Its Python API, CLI, and spreadsheet interface let researchers and application packages build auditable datasets and export them as tables, HTML, or Excel.
-
-[GitHub](https://github.com/expectedparrot/epiq) · [Documentation](https://github.com/expectedparrot/epiq#readme)
+Shared tools for storing research evidence and running surveys, experiments, and simulated conversations.
 
 ### EDSL
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/edsl"><img src="docs/assets/expected-parrot-logo.webp" width="640" alt="Expected Parrot logo: a green parrot inside expectation brackets"></a>
+</p>
 
 EDSL (Expected Parrot Domain-Specific Language) is a Python library for designing and running AI-powered surveys and experiments. Its composable questions, surveys, scenarios, agents, and language models support structured research across many respondents and models, with results that can be analyzed, visualized, and shared. It provides the survey and model-execution foundation used by many of the application packages below.
 
 [GitHub](https://github.com/expectedparrot/edsl) · [Documentation](https://docs.expectedparrot.com) · [Starter tutorial](https://docs.expectedparrot.com/en/latest/starter_tutorial)
 
+### Epiq
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/epiq"><img src="docs/assets/epiq-artwork.webp" width="640" alt="Epiq artwork: a green parrot wearing a cap and cape, carrying a bow and arrows, inside expectation brackets"></a>
+</p>
+
+Epiq is a local-first epistemic database for evidence-backed research. It stores entities, typed questions, source excerpts, and claims in SQLite, preserving the provenance and history behind each answer. Its Python API, CLI, and spreadsheet interface let researchers and application packages build auditable datasets and export them as tables, HTML, or Excel.
+
+[GitHub](https://github.com/expectedparrot/epiq) · [Documentation](https://github.com/expectedparrot/epiq#readme)
+
 ### AISS
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/aiss"><img src="docs/assets/aiss-artwork.png" width="640" alt="AISS artwork: parrots perched on a causal diagram linking buyer budget, seller minimum, and seller love to whether a deal occurs, inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/aiss"><img src="docs/assets/aiss-artwork.webp" width="640" alt="AISS artwork: parrots perched on a causal diagram linking buyer budget, seller minimum, and seller love to whether a deal occurs, inside expectation brackets"></a>
 </p>
 
 AISS is a Python package for designing, running, and analyzing AI social science studies with EDSL. It provides serializable research designs, independently versioned analysis plans, causal and factorial analysis, and deterministic scientific reports. Its simulation DSL defines participant roles, private information, treatments, interaction rules, and measurements, with resumable execution and durable attempt tracking.
 
 [GitHub](https://github.com/expectedparrot/aiss) · [Tutorial](https://expectedparrot.github.io/directory/tutorials/aiss/) · [Documentation](https://github.com/expectedparrot/aiss#readme) · [Simulation DSL manual (PDF)](https://github.com/expectedparrot/aiss/blob/main/docs/manual/aiss-manual.pdf)
+
+### Conversation
+
+Conversation is an EDSL-based package for simulating structured, multi-agent conversations. It manages turn-taking, parallel conversation runs, retry behavior, and accumulated results so researchers can study interactions among simulated participants rather than isolated survey responses.
+
+[GitHub](https://github.com/expectedparrot/conversation) · [Documentation](https://github.com/expectedparrot/conversation#readme)
 
 ## Application packages
 
@@ -37,7 +51,7 @@ Focused, agent-friendly CLIs and supporting libraries for research workflows, wi
 ### Aivis
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/aivis"><img src="https://raw.githubusercontent.com/expectedparrot/aivis/main/assets/aivis-overview.png" width="640" alt="Aivis AI brand-visibility measurement overview"></a>
+  <a href="https://github.com/expectedparrot/aivis"><img src="docs/assets/aivis-artwork.webp" width="640" alt="Aivis AI brand-visibility measurement overview"></a>
 </p>
 
 Aivis is an agent-facing CLI for measuring how brands and competitors appear in AI-generated answers. It administers a reusable prompt library across models, extracts tracked-brand observations with an EDSL judge, and stores deterministic time-series records for share of voice, mention rate, recommendations, sentiment, and citation influence.
@@ -47,7 +61,7 @@ Aivis is an agent-facing CLI for measuring how brands and competitors appear in 
 ### Ariel
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/ariel"><img src="https://raw.githubusercontent.com/expectedparrot/ariel/main/assets/ariel.png" width="640" alt="Ariel artwork: two parrots dividing a seed cake"></a>
+  <a href="https://github.com/expectedparrot/ariel"><img src="docs/assets/ariel-artwork.webp" width="640" alt="Ariel artwork: two parrots dividing a seed cake"></a>
 </p>
 
 Ariel is an agent-first fair-division package for rent, indivisible goods, bivalued chores, project credit, and shared fares. It combines local mathematical solvers and explicit verification with EDSL participation by humans or simulated subjects, preserves original evidence, and keeps post-allocation reactions separate from submitted inputs. Its state-aware `next` command guides agents through problem setup and execution.
@@ -57,7 +71,7 @@ Ariel is an agent-first fair-division package for rent, indivisible goods, bival
 ### Bewley
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/bewley"><img src="https://raw.githubusercontent.com/expectedparrot/bewley/main/docs/assets/bewley-package.png" width="640" alt="Bewley package artwork"></a>
+  <a href="https://github.com/expectedparrot/bewley"><img src="docs/assets/bewley-artwork.webp" width="640" alt="Bewley package artwork"></a>
 </p>
 
 Bewley is a local-first qualitative-coding CLI for interview transcripts and other text corpora. It maintains an auditable history of codebooks, span annotations, and memos, supports AI-assisted open coding through EDSL, and exports evidence tables, visual explorers, theory diagrams, and narrative summaries.
@@ -67,7 +81,7 @@ Bewley is a local-first qualitative-coding CLI for interview transcripts and oth
 ### Bower
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/bower"><img src="docs/assets/bower-artwork.jpg" width="640" alt="Bower artwork: a green parrot consultant in a suit and glasses holding an analysis tablet, inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/bower"><img src="docs/assets/bower-artwork.webp" width="640" alt="Bower artwork: a green parrot consultant in a suit and glasses holding an analysis tablet, inside expectation brackets"></a>
 </p>
 
 Bower is a CLI for hypothesis-driven stakeholder studies. It records firm context and sourced information about people, captures the commissioning brief, and designs customized interviews to test hypotheses. Human surveys and synthetic personas run through EDSL; Bower registers the returned results, preserves provenance, and links findings to evidence and follow-up work.
@@ -77,23 +91,17 @@ Bower is a CLI for hypothesis-driven stakeholder studies. It records firm contex
 ### Burr
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/burr"><img src="docs/assets/burr-artwork.jpg" width="640" alt="Burr artwork: a green parrot perched on a brass stock ticker under a glass dome, inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/burr"><img src="docs/assets/burr-artwork.webp" width="640" alt="Burr artwork: a green parrot perched on a brass stock ticker under a glass dome, inside expectation brackets"></a>
 </p>
 
 Burr is an agent-friendly CLI for driver-based company modeling. It separates business formulas, reported facts, and sourced assumptions; tests scenarios and records findings in an append-only experiment journal. Its guide and next commands lead agents through validation, belief testing, and exports to interactive dashboards, charts, CSV, and verified Excel workbooks.
 
 [GitHub (private)](https://github.com/expectedparrot/burr) · [Documentation (access required)](https://github.com/expectedparrot/burr#readme) · [HTML walkthrough (access required)](https://github.com/expectedparrot/burr/blob/main/docs/index.html) · [Agent guide (access required)](https://github.com/expectedparrot/burr/blob/main/burr/agent_guide.md)
 
-### Conversation
-
-Conversation is an EDSL-based package for simulating structured, multi-agent conversations. It manages turn-taking, parallel conversation runs, retry behavior, and accumulated results so researchers can study interactions among simulated participants rather than isolated survey responses.
-
-[GitHub](https://github.com/expectedparrot/conversation) · [Documentation](https://github.com/expectedparrot/conversation#readme)
-
 ### Dewey
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/dewey"><img src="https://raw.githubusercontent.com/expectedparrot/dewey/main/assets/dewey-literature-parrot.png" width="640" alt="Dewey package artwork"></a>
+  <a href="https://github.com/expectedparrot/dewey"><img src="docs/assets/dewey-artwork.webp" width="640" alt="Dewey package artwork"></a>
 </p>
 
 Dewey is an agent-facing CLI for auditable literature reviews. It manages papers, rendered text, short summaries, discovery and citation provenance, staged screening decisions, source relationships, searchable project state, interactive review explorers, and portable full-project archives.
@@ -103,7 +111,7 @@ Dewey is an agent-facing CLI for auditable literature reviews. It manages papers
 ### Flyvbjerg
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/flyvbjerg"><img src="https://raw.githubusercontent.com/expectedparrot/flyvbjerg/main/docs/flyvbjerg-art.png" width="640" alt="Flyvbjerg package artwork"></a>
+  <a href="https://github.com/expectedparrot/flyvbjerg"><img src="docs/assets/flyvbjerg-artwork.webp" width="640" alt="Flyvbjerg package artwork"></a>
 </p>
 
 Flyvbjerg is an agent-facing CLI for reference-class forecasting and outside-view analysis. It preserves comparable cases, sources, events, claims, metrics, missingness, dependence clusters, and frozen analyses in an auditable evidence ledger, turning accepted observations into defensible reference-class distributions.
@@ -113,7 +121,7 @@ Flyvbjerg is an agent-facing CLI for reference-class forecasting and outside-vie
 ### Green
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/green"><img src="https://raw.githubusercontent.com/expectedparrot/green/main/docs/assets/green-conjoint-artwork.png" width="640" alt="Green package artwork"></a>
+  <a href="https://github.com/expectedparrot/green"><img src="docs/assets/green-artwork.webp" width="640" alt="Green package artwork"></a>
 </p>
 
 Green is an agent-first toolkit for conjoint analysis and discrete-choice experiments. It helps design choice tasks, generate EDSL fieldwork, estimate preference models, and produce part-worths, willingness-to-pay estimates, market-share simulations, and sensitivity analyses.
@@ -123,7 +131,7 @@ Green is an agent-first toolkit for conjoint analysis and discrete-choice experi
 ### Golden
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/golden"><img src="https://raw.githubusercontent.com/expectedparrot/golden/main/docs/assets/golden-artwork.png" width="640" alt="Golden artwork: an Expected Parrot evaluating product ratings"></a>
+  <a href="https://github.com/expectedparrot/golden"><img src="docs/assets/golden-artwork.webp" width="640" alt="Golden artwork: an Expected Parrot evaluating product ratings"></a>
 </p>
 
 Golden is an agent-first CLI for evidence-backed consumer decisions. It combines structured preference interviews, explicit constraints, sourced product research, sensitivity analysis, and an interactive utility-versus-price explorer to help consumers make transparent, auditable choices.
@@ -133,7 +141,7 @@ Golden is an agent-first CLI for evidence-backed consumer decisions. It combines
 ### Helmer
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/helmer"><img src="https://raw.githubusercontent.com/expectedparrot/helmer/main/docs/assets/helmer-artwork.png" width="640" alt="Helmer artwork: a laurel-crowned parrot at the oracle of Delphi inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/helmer"><img src="docs/assets/helmer-artwork.webp" width="640" alt="Helmer artwork: a laurel-crowned parrot at the oracle of Delphi inside expectation brackets"></a>
 </p>
 
 Helmer is an agent-first CLI for Delphi expert elicitation. It collects numerical estimates and ratings across repeated rounds, gives each expert anonymous group feedback and their own previous answers, and reports consensus, stability, attrition, and remaining disagreement. It preserves study history, exchanges native EDSL instruments and Results, and supports small workflow pilots with separate participant roles.
@@ -143,7 +151,7 @@ Helmer is an agent-first CLI for Delphi expert elicitation. It collects numerica
 ### Ishikawa
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/ishikawa"><img src="https://raw.githubusercontent.com/expectedparrot/ishikawa/main/docs/assets/ishikawa-artwork.png" width="640" alt="Ishikawa artwork: a green parrot drawing a fishbone diagram inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/ishikawa"><img src="docs/assets/ishikawa-artwork.webp" width="640" alt="Ishikawa artwork: a green parrot drawing a fishbone diagram inside expectation brackets"></a>
 </p>
 
 Ishikawa is an agent-friendly Python CLI for cause-and-effect analysis and fishbone diagrams. It organizes possible causes into categories and nested why chains, records supporting and contradicting evidence, and tracks investigations and corrective actions. JSON project files, SVG diagrams, and searchable HTML reports preserve hypotheses and assessments without treating them as proven root causes.
@@ -153,7 +161,7 @@ Ishikawa is an agent-friendly Python CLI for cause-and-effect analysis and fishb
 ### Kahn
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/kahn"><img src="https://raw.githubusercontent.com/expectedparrot/kahn/main/docs/assets/kahn-package.png" width="640" alt="Kahn package artwork"></a>
+  <a href="https://github.com/expectedparrot/kahn"><img src="docs/assets/kahn-artwork.webp" width="640" alt="Kahn package artwork"></a>
 </p>
 
 Kahn is a two-axis strategic scenario-planning CLI. It turns environmental forces and critical uncertainties into a scenario matrix, develops narratives for the resulting futures, and evaluates strategic options across them.
@@ -163,7 +171,7 @@ Kahn is a two-axis strategic scenario-planning CLI. It turns environmental force
 ### Katz
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/katz"><img src="https://raw.githubusercontent.com/expectedparrot/katz/main/docs/katz-economist-parrot.png" width="640" alt="Katz package artwork"></a>
+  <a href="https://github.com/expectedparrot/katz"><img src="docs/assets/katz-artwork.webp" width="640" alt="Katz package artwork"></a>
 </p>
 
 Katz is a version-aware ledger for reviewing academic manuscripts. It anchors human and model-generated findings to manuscript sections and Git versions, tracks investigation and resolution history, and produces review reports from the resulting issue record.
@@ -173,7 +181,7 @@ Katz is a version-aware ledger for reviewing academic manuscripts. It anchors hu
 ### Kean
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/kean"><img src="docs/assets/kean-artwork.png" width="640" alt="Kean artwork: a green parrot detective in a fedora and trench coat"></a>
+  <a href="https://github.com/expectedparrot/kean"><img src="docs/assets/kean-artwork.webp" width="640" alt="Kean artwork: a green parrot detective in a fedora and trench coat"></a>
 </p>
 
 Kean is an agent-first CLI for evidence-backed event graphs on an ordinary epiq database. It records occurrences, participants, and supported relations, then exposes bitemporal timelines, auditable paths, response delays, unexplained events, and contested claims. Deterministic JSON, DOT, and HTML exports preserve claim and evidence lineage.
@@ -185,7 +193,7 @@ Local checkout: `~/tools/ep/kean`.
 ### Labeling
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/labeling"><img src="https://raw.githubusercontent.com/expectedparrot/labeling/master/docs/assets/labeling-parrot.png" width="640" alt="Labeling package artwork"></a>
+  <a href="https://github.com/expectedparrot/labeling"><img src="docs/assets/labeling-artwork.webp" width="640" alt="Labeling package artwork"></a>
 </p>
 
 Labeling is an agent-first CLI for reproducible LLM-as-rater workflows. It manages datasets, labeling specifications, gold standards, rule baselines, multi-rater aggregation, quality metrics, and exports while preserving a complete audit trail and an explicit EDSL execution boundary.
@@ -195,7 +203,7 @@ Labeling is an agent-first CLI for reproducible LLM-as-rater workflows. It manag
 ### Langley
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/langley"><img src="https://raw.githubusercontent.com/expectedparrot/langley/main/docs/assets/langley-package.png" width="640" alt="Langley package artwork"></a>
+  <a href="https://github.com/expectedparrot/langley"><img src="docs/assets/langley-artwork.webp" width="640" alt="Langley package artwork"></a>
 </p>
 
 Langley is an agent-first implementation of Richards Heuer's Analysis of Competing Hypotheses method. It compares evidence across hypotheses, records a durable audit trail, runs sensitivity analysis, and generates portable EDSL jobs for AI-assisted analysis.
@@ -205,7 +213,7 @@ Langley is an agent-first implementation of Richards Heuer's Analysis of Competi
 ### McCall
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/mccall"><img src="https://raw.githubusercontent.com/expectedparrot/mccall/main/assets/mccall-job-post-artwork.png" width="640" alt="McCall job-post testing artwork"></a>
+  <a href="https://github.com/expectedparrot/mccall"><img src="docs/assets/mccall-artwork.webp" width="640" alt="McCall job-post testing artwork"></a>
 </p>
 
 McCall is an agent-facing CLI for pretesting and refining job posts with EDSL candidate simulations. It preserves role requirements, post variants, persona provenance, portable Jobs and Results, and controlled comparisons so hiring teams can see how different candidate types interpret a post before publishing it.
@@ -215,7 +223,7 @@ McCall is an agent-facing CLI for pretesting and refining job posts with EDSL ca
 ### MCDA
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/mcda"><img src="https://raw.githubusercontent.com/expectedparrot/mcda/main/docs/mcda-package.png" width="640" alt="MCDA package artwork"></a>
+  <a href="https://github.com/expectedparrot/mcda"><img src="docs/assets/mcda-artwork.webp" width="640" alt="MCDA package artwork"></a>
 </p>
 
 MCDA is an agent-first, JSON-enveloped CLI for multi-criteria decision analysis. It records participants, alternatives, criteria, weights, thresholds, and performance assessments, then compares options using transparent weighted-sum or ELECTRE III analysis while preserving auditable project state.
@@ -225,7 +233,7 @@ MCDA is an agent-first, JSON-enveloped CLI for multi-criteria decision analysis.
 ### Messick
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/messick"><img src="https://raw.githubusercontent.com/expectedparrot/messick/main/docs/assets/messick-artwork.png" width="640" alt="Messick package artwork"></a>
+  <a href="https://github.com/expectedparrot/messick"><img src="docs/assets/messick-artwork.webp" width="640" alt="Messick package artwork"></a>
 </p>
 
 Messick is an agent-first package for pretesting, revising, and validating EDSL survey instruments. It tracks intended constructs and uses, preserves immutable revisions and evidence provenance, and keeps simulation findings distinct from evidence about human respondents.
@@ -235,7 +243,7 @@ Messick is an agent-first package for pretesting, revising, and validating EDSL 
 ### Niles
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/niles"><img src="https://raw.githubusercontent.com/expectedparrot/niles/master/docs/assets/niles-artwork.png" width="640" alt="Niles package artwork"></a>
+  <a href="https://github.com/expectedparrot/niles"><img src="docs/assets/niles-artwork.webp" width="640" alt="Niles package artwork"></a>
 </p>
 
 Niles is a local-first CRM CLI for relationship work. It manages contacts, interaction notes, follow-up tasks, teammates, materials, surveys, human intake, and reviewed model recommendations through a machine-readable interface.
@@ -248,10 +256,20 @@ Oneheart is a CLI for designing and recording Concordia-backed multi-agent socia
 
 [GitHub](https://github.com/expectedparrot/oneheart) · [Tutorial](https://expectedparrot.github.io/oneheart/)
 
+### Perla
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/perla"><img src="docs/assets/perla-artwork.webp" width="640" alt="Perla artwork: a green parrot wearing a burgundy hooded cloak, inside expectation brackets"></a>
+</p>
+
+Perla is a local-first CLI for competitive wargaming. It tests strategic decisions through sourced actor dossiers, isolated committed moves, neutral adjudication, and player rebuttals. It exports EDSL jobs for external execution, preserves an audit trail across rounds, and produces criterion evaluations, registered predictions, JSON/HTML reports, and lookback calibration scores.
+
+[GitHub (private)](https://github.com/expectedparrot/perla) · [Documentation (access required)](https://github.com/expectedparrot/perla#readme) · [HTML walkthrough (access required)](https://github.com/expectedparrot/perla/blob/main/docs/index.html)
+
 ### Premortem
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/premortem"><img src="https://raw.githubusercontent.com/expectedparrot/premortem/main/docs/assets/premortem-mark.png" width="640" alt="Premortem package artwork"></a>
+  <a href="https://github.com/expectedparrot/premortem"><img src="docs/assets/premortem-artwork.webp" width="640" alt="Premortem package artwork"></a>
 </p>
 
 Premortem facilitates a structured, Gary Klein-style pre-mortem for a decision, project, launch, or strategy. It elicits failure modes from stakeholder personas, builds and scores a causal graph, develops mitigations and a research agenda, and renders a final report.
@@ -261,7 +279,7 @@ Premortem facilitates a structured, Gary Klein-style pre-mortem for a decision, 
 ### Pruefung
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/pruefung"><img src="https://raw.githubusercontent.com/expectedparrot/pruefung/main/assets/pruefung-artwork.png" width="640" alt="Pruefung package artwork"></a>
+  <a href="https://github.com/expectedparrot/pruefung"><img src="docs/assets/pruefung-artwork.webp" width="640" alt="Pruefung package artwork"></a>
 </p>
 
 Pruefung is an agent-first CLI for building, checking, deploying, and grading quizzes and exams with EDSL-native questions. It stores inspectable project state, returns structured JSON for agent workflows, and keeps model inference behind an explicit make, run, and ingest boundary.
@@ -271,7 +289,7 @@ Pruefung is an agent-first CLI for building, checking, deploying, and grading qu
 ### Roth
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/roth"><img src="https://raw.githubusercontent.com/expectedparrot/roth/main/docs/assets/roth-package.png" width="640" alt="Roth package artwork"></a>
+  <a href="https://github.com/expectedparrot/roth"><img src="docs/assets/roth-artwork.webp" width="640" alt="Roth package artwork"></a>
 </p>
 
 Roth collects preferences on both sides of a market and computes one-to-one stable matches using deferred acceptance. It supports Humanize ranking surveys, organizer-controlled LLM delegation, optional A-versus-B preference benchmarks, frozen inputs, and reports of realized ranks and unmatched participants.
@@ -281,7 +299,7 @@ Roth collects preferences on both sides of a market and computes one-to-one stab
 ### Rudin
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/rudin"><img src="docs/assets/rudin-artwork.png" width="640" alt="Rudin artwork: a geometric parrot inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/rudin"><img src="docs/assets/rudin-artwork.webp" width="640" alt="Rudin artwork: a geometric parrot inside expectation brackets"></a>
 </p>
 
 Rudin is a local-first CLI for designing transparent scoring models. It turns domain rubrics into manual or learned integer scorecards, scores structured answers, and exports EDSL surveys and portable artifacts. Its worked LaTeX manual develops rubric design, fitting, threshold selection, and held-out evaluation through executable synthetic examples.
@@ -291,7 +309,7 @@ Rudin is a local-first CLI for designing transparent scoring models. It turns do
 ### Spence
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/spence"><img src="https://raw.githubusercontent.com/expectedparrot/spence/main/docs/assets/spence-artwork.png" width="640" alt="Spence artwork: a peacock with its tail fanned inside brackets"></a>
+  <a href="https://github.com/expectedparrot/spence"><img src="docs/assets/spence-artwork.webp" width="640" alt="Spence artwork: a peacock with its tail fanned inside brackets"></a>
 </p>
 
 Spence is an applicant tracking CLI built on EDSL humanize. It connects job posts, hosted application forms, candidate records, and structured human reviews in one private workspace. It preserves application and review history, tracks hiring stages, and produces candidate reports. The package is a working alpha; live hosted acceptance testing remains outstanding.
@@ -301,7 +319,7 @@ Spence is an applicant tracking CLI built on EDSL humanize. It connects job post
 ### Tommy
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/tommy"><img src="https://raw.githubusercontent.com/expectedparrot/tommy/main/docs/assets/tommy-artwork.png" width="640" alt="Tommy package artwork"></a>
+  <a href="https://github.com/expectedparrot/tommy"><img src="docs/assets/tommy-artwork.webp" width="640" alt="Tommy package artwork"></a>
 </p>
 
 Tommy is an agent-facing CLI for preparing realistic sales roleplays with Expected Parrot. It preserves practice attempts and transcript-grounded reviews, produces self-contained coaching reports, and guides coding agents through each state transition with deterministic recommended actions.
@@ -311,7 +329,7 @@ Tommy is an agent-facing CLI for preparing realistic sales roleplays with Expect
 ### Treffen
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/treffen"><img src="https://raw.githubusercontent.com/expectedparrot/treffen/main/docs/assets/treffen-package.png" width="640" alt="Treffen package artwork"></a>
+  <a href="https://github.com/expectedparrot/treffen"><img src="docs/assets/treffen-artwork.webp" width="640" alt="Treffen package artwork"></a>
 </p>
 
 Treffen is an agent-first CLI for preparing better meetings. It turns a meeting outcome and participant list into typed EDSL surveys and adaptive interviews, person-specific links and QR codes, evidence-backed synthesis, focused agendas and pre-reads, and durable decision records—while supporting both expected and confirmed attendance.
@@ -321,7 +339,7 @@ Treffen is an agent-first CLI for preparing better meetings. It turns a meeting 
 ### Umriss
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/umriss"><img src="https://raw.githubusercontent.com/expectedparrot/umriss/main/docs/assets/umriss-art.png" width="640" alt="Umriss package artwork"></a>
+  <a href="https://github.com/expectedparrot/umriss"><img src="docs/assets/umriss-artwork.webp" width="640" alt="Umriss package artwork"></a>
 </p>
 
 Umriss is an agent-facing CLI for constructing auditable digital twins from published survey marginals. It builds candidate personas, calibrates their weights to known population responses, and evaluates the resulting synthetic population against held-out survey items.
@@ -331,7 +349,7 @@ Umriss is an agent-facing CLI for constructing auditable digital twins from publ
 ### UXTest
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/uxtest"><img src="https://raw.githubusercontent.com/expectedparrot/uxtest/main/docs/assets/uxtest-package.png" width="640" alt="UXTest package artwork"></a>
+  <a href="https://github.com/expectedparrot/uxtest"><img src="docs/assets/uxtest-artwork.webp" width="640" alt="UXTest package artwork"></a>
 </p>
 
 UXTest is an agent-first CLI for running synthetic-user UX studies against live web pages. It uses Playwright and EDSL to capture browser journeys, screenshots, traces, and structured findings, preserving an inspectable evidence trail for issue discovery, comparison, and regression testing.
@@ -341,7 +359,7 @@ UXTest is an agent-first CLI for running synthetic-user UX studies against live 
 ### Vorhersage
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/vorhersage"><img src="https://raw.githubusercontent.com/expectedparrot/vorhersage/main/docs/assets/vorhersage-artwork.png" width="640" alt="Vorhersage artwork: a green parrot connected to sensors in a glass tank, framed by expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/vorhersage"><img src="docs/assets/vorhersage-artwork.webp" width="640" alt="Vorhersage artwork: a green parrot connected to sensors in a glass tank, framed by expectation brackets"></a>
 </p>
 
 Vorhersage is a forecasting workbench for agents. It turns binary-event questions into durable research workflows, preserving source provenance, probability judgments, reviews, revisions, and outcomes. It integrates with Epiq, supports optional scenario mixtures and related-question checks, and provides configurable monitoring and matched forecast evaluation.
@@ -351,7 +369,7 @@ Vorhersage is a forecasting workbench for agents. It turns binary-event question
 ### Voting
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/voting"><img src="https://raw.githubusercontent.com/expectedparrot/voting/main/docs/assets/voting-mark.png" width="640" alt="Voting package artwork"></a>
+  <a href="https://github.com/expectedparrot/voting"><img src="docs/assets/voting-artwork.webp" width="640" alt="Voting package artwork"></a>
 </p>
 
 Voting is a JSON-first toolkit for preference research and group-decision analysis. It collects ballots from people or AI personas and compares single- and multi-winner counting rules across plurality, ranked, approval, score, grade, allocation, and Condorcet method families.
@@ -361,7 +379,7 @@ Voting is a JSON-first toolkit for preference research and group-decision analys
 ### Zermelo
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/zermelo"><img src="docs/assets/zermelo-artwork.jpg" width="640" alt="Zermelo artwork: two parrots playing chess inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/zermelo"><img src="docs/assets/zermelo-artwork.webp" width="640" alt="Zermelo artwork: two parrots playing chess inside expectation brackets"></a>
 </p>
 
 Zermelo is an agent-friendly CLI for ranking large collections through small, overlapping comparisons. It registers entrants and native EDSL AgentList rankers, exports EP jobs for external execution, and fits the returned rankings with Plackett–Luce, Bradley–Terry, or Elo. Calibration, adaptive batching, and sensitivity diagnostics help decide what to compare next while preserving the full study history.
@@ -377,7 +395,7 @@ Zitate is an agent-facing CLI for auditing whether academic sources support manu
 ### Zugunruhe
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/zugunruhe"><img src="https://raw.githubusercontent.com/expectedparrot/zugunruhe/main/assets/readme-artwork.png" width="640" alt="Zugunruhe package artwork"></a>
+  <a href="https://github.com/expectedparrot/zugunruhe"><img src="docs/assets/zugunruhe-artwork.webp" width="640" alt="Zugunruhe package artwork"></a>
 </p>
 
 Zugunruhe is an agent-focused migration CLI for moving Qualtrics and SurveyMonkey instruments to EDSL and Expected Parrot. It provides a staged, machine-readable workflow for capture, conversion, validation, review, and export.
@@ -387,7 +405,7 @@ Zugunruhe is an agent-focused migration CLI for moving Qualtrics and SurveyMonke
 ### Zwicky
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/zwicky"><img src="https://raw.githubusercontent.com/expectedparrot/zwicky/main/docs/assets/zwicky-morphological-parrots.png" width="640" alt="Zwicky package artwork"></a>
+  <a href="https://github.com/expectedparrot/zwicky"><img src="docs/assets/zwicky-artwork.webp" width="640" alt="Zwicky package artwork"></a>
 </p>
 
 Zwicky is a general morphological-analysis CLI for exploring product and feature design spaces. It defines dimensions and values, generates configurations, applies constraints, and supports AI- and human-assisted evaluation, Pareto analysis, and concept selection.
@@ -397,7 +415,7 @@ Zwicky is a general morphological-analysis CLI for exploring product and feature
 ### Zwill
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/zwill"><img src="https://raw.githubusercontent.com/expectedparrot/zwill/main/docs/assets/zwill-package.png" width="640" alt="Zwill package artwork"></a>
+  <a href="https://github.com/expectedparrot/zwill"><img src="docs/assets/zwill-artwork.webp" width="640" alt="Zwill package artwork"></a>
 </p>
 
 Zwill is an open validation harness for survey digital twins. It builds twin prompts and EDSL jobs, records inference artifacts, and evaluates individual- and aggregate-level predictive performance against observed survey responses and conventional baselines.
