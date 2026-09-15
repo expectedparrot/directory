@@ -348,6 +348,12 @@ Voting is a JSON-first toolkit for preference research and group-decision analys
 
 [GitHub](https://github.com/expectedparrot/voting) · [Tutorial](https://expectedparrot.github.io/voting/)
 
+### Zermelo
+
+Zermelo is an agent-friendly CLI for ranking large collections through small, overlapping comparisons. It registers entrants and native EDSL AgentList rankers, exports EP jobs for external execution, and fits the returned rankings with Plackett–Luce, Bradley–Terry, or Elo. Calibration, adaptive batching, and sensitivity diagnostics help decide what to compare next while preserving the full study history.
+
+[GitHub (private)](https://github.com/expectedparrot/zermelo) · [Documentation (access required)](https://github.com/expectedparrot/zermelo#readme) · [HTML walkthrough (access required)](https://github.com/expectedparrot/zermelo/blob/main/docs/index.html)
+
 ### Zitate
 
 Zitate is an agent-facing CLI for auditing whether academic sources support manuscript claims. It inventories citations, preserves the source material and exact evidence used for each judgment, and produces an auditable report without silently modifying the manuscript or treating metadata and search snippets as substantive support.
