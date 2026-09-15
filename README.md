@@ -360,6 +360,10 @@ Voting is a JSON-first toolkit for preference research and group-decision analys
 
 ### Zermelo
 
+<p align="center">
+  <a href="https://github.com/expectedparrot/zermelo"><img src="docs/assets/zermelo-artwork.jpg" width="640" alt="Zermelo artwork: two parrots playing chess inside expectation brackets"></a>
+</p>
+
 Zermelo is an agent-friendly CLI for ranking large collections through small, overlapping comparisons. It registers entrants and native EDSL AgentList rankers, exports EP jobs for external execution, and fits the returned rankings with Plackett–Luce, Bradley–Terry, or Elo. Calibration, adaptive batching, and sensitivity diagnostics help decide what to compare next while preserving the full study history.
 
 [GitHub (private)](https://github.com/expectedparrot/zermelo) · [Documentation (access required)](https://github.com/expectedparrot/zermelo#readme) · [HTML walkthrough (access required)](https://github.com/expectedparrot/zermelo/blob/main/docs/index.html)
