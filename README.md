@@ -108,6 +108,12 @@ Dewey is an agent-facing CLI for auditable literature reviews. It manages papers
 
 [GitHub](https://github.com/expectedparrot/dewey) · [Tutorial](https://expectedparrot.github.io/dewey/)
 
+### Earnings
+
+Earnings is an agent-first CLI for predicting and preparing earnings calls. It freezes dated company evidence and script variants, builds EDSL studies for analyst, investor, media, and ecosystem panels, and turns validated results into management preparation reports and paired script comparisons. Its guide and next commands track study revisions and artifacts; backtests score predefined topic occurrence and analyst attendance while keeping simulated reactions distinct from observed outcomes.
+
+[GitHub (private)](https://github.com/expectedparrot/earnings) · [Documentation (access required)](https://github.com/expectedparrot/earnings#readme) · [Agent guide (access required)](https://github.com/expectedparrot/earnings/blob/main/earnings/agent_guide.md)
+
 ### Flyvbjerg
 
 <p align="center">
