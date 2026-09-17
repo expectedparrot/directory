@@ -20,6 +20,7 @@ their upstream sources for future updates.
 | [ariel-artwork.webp](ariel-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/ariel/main/assets/ariel.png) |
 | [bewley-artwork.webp](bewley-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/bewley/main/docs/assets/bewley-package.png) |
 | [dewey-artwork.webp](dewey-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/dewey/main/assets/dewey-literature-parrot.png) |
+| [earnings-artwork.webp](earnings-artwork.webp) | User-supplied artwork; [original PNG (private repository)](https://github.com/expectedparrot/earnings/blob/main/docs/assets/earnings-artwork.png) |
 | [flyvbjerg-artwork.webp](flyvbjerg-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/flyvbjerg/main/docs/flyvbjerg-art.png) |
 | [golden-artwork.webp](golden-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/golden/main/docs/assets/golden-artwork.png) |
 | [green-artwork.webp](green-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/green/main/docs/assets/green-conjoint-artwork.png) |
