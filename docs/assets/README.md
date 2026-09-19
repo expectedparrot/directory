@@ -36,6 +36,7 @@ their upstream sources for future updates.
 | [niles-artwork.webp](niles-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/niles/master/docs/assets/niles-artwork.png) |
 | [premortem-artwork.webp](premortem-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/premortem/main/docs/assets/premortem-mark.png) |
 | [pruefung-artwork.webp](pruefung-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/pruefung/main/assets/pruefung-artwork.png) |
+| [raiffa-artwork.webp](raiffa-artwork.webp) | User-supplied artwork; [original PNG](https://raw.githubusercontent.com/expectedparrot/raiffa/main/docs/assets/raiffa-artwork.png) |
 | [roth-artwork.webp](roth-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/roth/main/docs/assets/roth-package.png) |
 | [spence-artwork.webp](spence-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/spence/main/docs/assets/spence-artwork.png) |
 | [tommy-artwork.webp](tommy-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/tommy/main/docs/assets/tommy-artwork.png) |

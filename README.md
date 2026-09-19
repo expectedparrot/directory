@@ -286,6 +286,16 @@ Pruefung is an agent-first CLI for building, checking, deploying, and grading qu
 
 [GitHub](https://github.com/expectedparrot/pruefung) · [Documentation](https://github.com/expectedparrot/pruefung/blob/main/pruefung-spec.md)
 
+### Raiffa
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/raiffa"><img src="docs/assets/raiffa-artwork.webp" width="640" alt="Raiffa artwork: a parrot perched in a branching tree, framed by expectation brackets"></a>
+</p>
+
+Raiffa turns sourced beliefs into auditable decision policies using finite influence diagrams. It compares choices, finds switching thresholds, and values explicitly modeled research, with parameter provenance, frozen analyses, and replayable decision memos. The tutorial works through a synthetic settle-versus-litigate decision, including whether to buy more information.
+
+[GitHub](https://github.com/expectedparrot/raiffa) · [Documentation](https://github.com/expectedparrot/raiffa#readme) · [HTML tutorial](https://github.com/expectedparrot/raiffa/blob/main/docs/index.html)
+
 ### Roth
 
 <p align="center">
