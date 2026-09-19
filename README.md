@@ -11,7 +11,7 @@ Shared tools for storing research evidence and running surveys, experiments, and
 ### EDSL
 
 <p align="center">
-  <a href="https://github.com/expectedparrot/edsl"><img src="docs/assets/expected-parrot-logo.webp" width="640" alt="Expected Parrot logo: a green parrot inside expectation brackets"></a>
+  <a href="https://github.com/expectedparrot/edsl"><img src="docs/assets/expected-parrot-logo.png" width="640" alt="Expected Parrot logo: a green parrot inside expectation brackets"></a>
 </p>
 
 EDSL (Expected Parrot Domain-Specific Language) is a Python library for designing and running AI-powered surveys and experiments. Its composable questions, surveys, scenarios, agents, and language models support structured research across many respondents and models, with results that can be analyzed, visualized, and shared. It provides the survey and model-execution foundation used by many of the application packages below.
