@@ -28,7 +28,7 @@ their upstream sources for future updates.
 | [ishikawa-artwork.webp](ishikawa-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/ishikawa/main/docs/assets/ishikawa-artwork.png) |
 | [kahn-artwork.webp](kahn-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/kahn/main/docs/assets/kahn-package.png) |
 | [katz-artwork.webp](katz-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/katz/main/docs/katz-economist-parrot.png) |
-| [labeling-artwork.webp](labeling-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/labeling/master/docs/assets/labeling-parrot.png) |
+| [labeling-artwork.webp](labeling-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/urteil/master/docs/assets/labeling-parrot.png) |
 | [langley-artwork.webp](langley-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/langley/main/docs/assets/langley-package.png) |
 | [mccall-artwork.webp](mccall-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/mccall/main/assets/mccall-job-post-artwork.png) |
 | [mcda-artwork.webp](mcda-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/mcda/main/docs/mcda-package.png) |

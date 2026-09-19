@@ -200,16 +200,6 @@ Kean is an agent-first CLI for evidence-backed event graphs on an ordinary epiq 
 
 Local checkout: `~/tools/ep/kean`.
 
-### Labeling
-
-<p align="center">
-  <a href="https://github.com/expectedparrot/labeling"><img src="docs/assets/labeling-artwork.webp" width="640" alt="Labeling package artwork"></a>
-</p>
-
-Labeling is an agent-first CLI for reproducible LLM-as-rater workflows. It manages datasets, labeling specifications, gold standards, rule baselines, multi-rater aggregation, quality metrics, and exports while preserving a complete audit trail and an explicit EDSL execution boundary.
-
-[GitHub](https://github.com/expectedparrot/labeling) · [Tutorial](https://expectedparrot.github.io/labeling/)
-
 ### Langley
 
 <p align="center">
@@ -306,16 +296,6 @@ Roth collects preferences on both sides of a market and computes one-to-one stab
 
 [GitHub](https://github.com/expectedparrot/roth) · [Tutorial](https://expectedparrot.github.io/roth/)
 
-### Rudin
-
-<p align="center">
-  <a href="https://github.com/expectedparrot/rudin"><img src="docs/assets/rudin-artwork.webp" width="640" alt="Rudin artwork: a geometric parrot inside expectation brackets"></a>
-</p>
-
-Rudin is a local-first CLI for designing transparent scoring models. It turns domain rubrics into manual or learned integer scorecards, scores structured answers, and exports EDSL surveys and portable artifacts. Its worked LaTeX manual develops rubric design, fitting, threshold selection, and held-out evaluation through executable synthetic examples.
-
-[GitHub](https://github.com/expectedparrot/rudin) · [Tutorial](https://expectedparrot.github.io/rudin/) · [Manual (PDF)](https://github.com/expectedparrot/rudin/blob/main/docs/rudin-manual.pdf)
-
 ### Spence
 
 <p align="center">
@@ -355,6 +335,16 @@ Treffen is an agent-first CLI for preparing better meetings. It turns a meeting 
 Umriss is an agent-facing CLI for constructing auditable digital twins from published survey marginals. It builds candidate personas, calibrates their weights to known population responses, and evaluates the resulting synthetic population against held-out survey items.
 
 [GitHub](https://github.com/expectedparrot/umriss) · [Tutorial](https://expectedparrot.github.io/umriss/)
+
+### Urteil
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/urteil"><img src="docs/assets/labeling-artwork.webp" width="640" alt="Urteil package artwork"></a>
+</p>
+
+Urteil is an agent-first CLI for rubric evaluation, LLM ratings, and auditable scoring. It combines codebooks, manual and fitted scorecards, labeling workflows, gold standards, multi-rater aggregation, quality metrics, and exports. Portable EDSL jobs keep model execution separate, while saved ratings can be rescored locally with a complete audit trail.
+
+[GitHub](https://github.com/expectedparrot/urteil) · [Tutorial](https://expectedparrot.github.io/urteil/) · [Scoring manual (PDF)](https://github.com/expectedparrot/urteil/blob/master/docs/scoring-manual.pdf)
 
 ### UXTest
 
