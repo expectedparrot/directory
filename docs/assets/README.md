@@ -39,6 +39,7 @@ their upstream sources for future updates.
 | [raiffa-artwork.webp](raiffa-artwork.webp) | User-supplied artwork; [original PNG](https://raw.githubusercontent.com/expectedparrot/raiffa/main/docs/assets/raiffa-artwork.png) |
 | [roth-artwork.webp](roth-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/roth/main/docs/assets/roth-package.png) |
 | [spence-artwork.webp](spence-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/spence/main/docs/assets/spence-artwork.png) |
+| [stanton-artwork.webp](stanton-artwork.webp) | User-supplied artwork; [original PNG](https://raw.githubusercontent.com/expectedparrot/stanton/main/docs/assets/stanton-artwork.png) |
 | [tommy-artwork.webp](tommy-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/tommy/main/docs/assets/tommy-artwork.png) |
 | [treffen-artwork.webp](treffen-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/treffen/main/docs/assets/treffen-package.png) |
 | [umriss-artwork.webp](umriss-artwork.webp) | [Original](https://raw.githubusercontent.com/expectedparrot/umriss/main/docs/assets/umriss-art.png) |

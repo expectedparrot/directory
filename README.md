@@ -316,6 +316,16 @@ Spence is an applicant tracking CLI built on EDSL humanize. It connects job post
 
 [GitHub](https://github.com/expectedparrot/spence) · [Tutorial](https://expectedparrot.github.io/spence/)
 
+### Stanton
+
+<p align="center">
+  <a href="https://github.com/expectedparrot/stanton"><img src="docs/assets/stanton-artwork.webp" width="640" alt="Stanton artwork: a green parrot estimating the number of jelly beans in a jar, with candidate counts above it, inside expectation brackets"></a>
+</p>
+
+Stanton is a local numerical estimation workbench for people and agents. It combines sourced estimates with unit-aware arithmetic, propagates uncertainty, and compares alternative estimation strategies while preserving provenance and revision history. Its agent guide supports research, sensitivity analysis, and issued conclusions that retain scope, dates, limitations, and unresolved evidence gaps.
+
+[GitHub](https://github.com/expectedparrot/stanton) · [Documentation](https://github.com/expectedparrot/stanton#readme) · [Research review walkthrough](https://github.com/expectedparrot/stanton/blob/main/docs/research-review.md)
+
 ### Tommy
 
 <p align="center">
