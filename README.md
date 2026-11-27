@@ -4,9 +4,7 @@
 
 This catalog brings together foundational research tools and application packages from [Expected Parrot](https://www.expectedparrot.com/). Expected Parrot builds open tools for designing, running, and analyzing AI-powered research. Start with EDSL for surveys and model execution, Epiq for evidence-backed data, AISS for research design and analysis, and Conversation for simulated interactions, then explore applications for specific research methods and workflows.
 
-The [search catalog](packages.json) lists public companion packages for discovery through EDSL. When adding a package, include its repository, a short description, and the research methods or abbreviations people use to find it. Changes merged into `main` open or update one EDSL pull request containing the catalog snapshot.
-
-Maintainers can also run **Sync package catalog to EDSL** manually from the Actions tab on `main`. For initial setup or token rotation, set the directory repository’s Actions secret `EDSL_CATALOG_SYNC_TOKEN` to a fine-grained GitHub token scoped to `expectedparrot/edsl` with **Contents** and **Pull requests** read/write permissions. Pull requests in this repository validate the catalog and preview the EDSL diff without using that secret.
+The [search catalog](packages.json) lists public companion packages for discovery through EDSL. When adding a package, include its repository, a short description, and the research methods or abbreviations people use to find it. EDSL checks this repository’s `main` branch daily and proposes changes to its bundled snapshot in an EDSL pull request. Maintainers can also run **Sync research package catalog** from the EDSL Actions tab.
 
 ## Foundation packages
 
