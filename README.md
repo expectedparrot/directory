@@ -4,6 +4,8 @@
 
 This catalog brings together foundational research tools and application packages from [Expected Parrot](https://www.expectedparrot.com/). Expected Parrot builds open tools for designing, running, and analyzing AI-powered research. Start with EDSL for surveys and model execution, Epiq for evidence-backed data, AISS for research design and analysis, and Conversation for simulated interactions, then explore applications for specific research methods and workflows.
 
+The [search catalog](packages.json) lists public companion packages for discovery through EDSL. When adding a package, include its repository, a description of the researcher’s task, inputs and outputs, and both formal method names and everyday terms for supported capabilities. For example, someone looking for rent division might search for “rent splitting” or “envy-free room allocation.” EDSL checks this repository’s `main` branch daily and proposes changes to its bundled snapshot in an EDSL pull request. Maintainers can also run **Sync research package catalog** from the EDSL Actions tab.
+
 ## Foundation packages
 
 Shared tools for storing research evidence and running surveys, experiments, and simulated conversations.
@@ -64,7 +66,7 @@ Aivis is an agent-facing CLI for measuring how brands and competitors appear in 
   <a href="https://github.com/expectedparrot/ariel"><img src="docs/assets/ariel-artwork.webp" width="640" alt="Ariel artwork: two parrots dividing a seed cake"></a>
 </p>
 
-Ariel is an agent-first fair-division package for rent, indivisible goods, bivalued chores, project credit, and shared fares. It combines local mathematical solvers and explicit verification with EDSL participation by humans or simulated subjects, preserves original evidence, and keeps post-allocation reactions separate from submitted inputs. Its state-aware `next` command guides agents through problem setup and execution.
+Ariel helps housemates split rent and assign rooms so each person prefers their own room at its price at least as much as any alternative. It also handles indivisible goods, bivalued chores, project credit, and shared fares. It combines local mathematical solvers and explicit verification with EDSL participation by humans or simulated subjects, preserves original evidence, and keeps post-allocation reactions separate from submitted inputs. Its state-aware `next` command guides agents through problem setup and execution.
 
 [GitHub](https://github.com/expectedparrot/ariel) · [Tutorial](https://github.com/expectedparrot/ariel#install-and-try-the-offline-example)
 
@@ -104,7 +106,7 @@ Burr is an agent-friendly CLI for driver-based company modeling. It separates bu
   <a href="https://github.com/expectedparrot/dewey"><img src="docs/assets/dewey-artwork.webp" width="640" alt="Dewey package artwork"></a>
 </p>
 
-Dewey is an agent-facing CLI for auditable literature reviews. It manages papers, rendered text, short summaries, discovery and citation provenance, staged screening decisions, source relationships, searchable project state, interactive review explorers, and portable full-project archives.
+Use Dewey to follow a paper’s citation trail, record why a study was included or excluded, and link a literature review’s findings back to supporting evidence. It manages papers, rendered text, short summaries, discovery and citation provenance, staged screening decisions, source relationships, searchable project state, interactive review explorers, and portable full-project archives.
 
 [GitHub](https://github.com/expectedparrot/dewey) · [Tutorial](https://expectedparrot.github.io/dewey/)
 
@@ -124,7 +126,7 @@ Earnings is an agent-first CLI for predicting and preparing earnings calls. It f
   <a href="https://github.com/expectedparrot/flyvbjerg"><img src="docs/assets/flyvbjerg-artwork.webp" width="640" alt="Flyvbjerg package artwork"></a>
 </p>
 
-Flyvbjerg is an agent-facing CLI for reference-class forecasting and outside-view analysis. It preserves comparable cases, sources, events, claims, metrics, missingness, dependence clusters, and frozen analyses in an auditable evidence ledger, turning accepted observations into defensible reference-class distributions.
+Use Flyvbjerg for reference-class forecasting when historical outcomes from comparable projects can inform a new estimate, such as the likely duration of a renovation. It preserves comparable cases, sources, events, claims, metrics, missingness, dependence clusters, and frozen analyses in an auditable evidence ledger, turning accepted observations into defensible reference-class distributions.
 
 [GitHub](https://github.com/expectedparrot/flyvbjerg) · [Tutorial](https://expectedparrot.github.io/flyvbjerg/)
 
@@ -174,7 +176,7 @@ Ishikawa is an agent-friendly Python CLI for cause-and-effect analysis and fishb
   <a href="https://github.com/expectedparrot/kahn"><img src="docs/assets/kahn-artwork.webp" width="640" alt="Kahn package artwork"></a>
 </p>
 
-Kahn is a two-axis strategic scenario-planning CLI. It turns environmental forces and critical uncertainties into a scenario matrix, develops narratives for the resulting futures, and evaluates strategic options across them.
+Kahn uses two-axis scenario planning to help a team explore four plausible futures, such as fast or slow housing growth crossed with high or low remote work. It turns environmental forces and critical uncertainties into a scenario matrix, develops narratives for the resulting futures, and evaluates strategic options across them.
 
 [GitHub](https://github.com/expectedparrot/kahn) · [Tutorial](https://expectedparrot.github.io/kahn/)
 
@@ -206,7 +208,7 @@ Local checkout: `~/tools/ep/kean`.
   <a href="https://github.com/expectedparrot/langley"><img src="docs/assets/langley-artwork.webp" width="640" alt="Langley package artwork"></a>
 </p>
 
-Langley is an agent-first implementation of Richards Heuer's Analysis of Competing Hypotheses method. It compares evidence across hypotheses, records a durable audit trail, runs sensitivity analysis, and generates portable EDSL jobs for AI-assisted analysis.
+Langley implements Richards Heuer's Analysis of Competing Hypotheses method. A researcher can build an evidence matrix for rival explanations and see which observations contradict each one. It compares evidence across hypotheses, records a durable audit trail, runs sensitivity analysis, and generates portable EDSL jobs for AI-assisted analysis.
 
 [GitHub](https://github.com/expectedparrot/langley) · [Tutorial](https://expectedparrot.github.io/langley/)
 
@@ -352,7 +354,7 @@ Treffen is an agent-first CLI for preparing better meetings. It turns a meeting 
   <a href="https://github.com/expectedparrot/umriss"><img src="docs/assets/umriss-artwork.webp" width="640" alt="Umriss package artwork"></a>
 </p>
 
-Umriss is an agent-facing CLI for constructing auditable digital twins from published survey marginals. It builds candidate personas, calibrates their weights to known population responses, and evaluates the resulting synthetic population against held-out survey items.
+Use Umriss to build a weighted synthetic panel when you have published survey marginals, such as a city’s percentages by age group or housing tenure. It builds candidate personas, calibrates their weights to known population responses, and evaluates the resulting synthetic population against held-out survey items.
 
 [GitHub](https://github.com/expectedparrot/umriss) · [Tutorial](https://expectedparrot.github.io/umriss/)
 
@@ -392,7 +394,7 @@ Vorhersage is a forecasting workbench for agents. It turns binary-event question
   <a href="https://github.com/expectedparrot/voting"><img src="docs/assets/voting-artwork.webp" width="640" alt="Voting package artwork"></a>
 </p>
 
-Voting is a JSON-first toolkit for preference research and group-decision analysis. It collects ballots from people or AI personas and compares single- and multi-winner counting rules across plurality, ranked, approval, score, grade, allocation, and Condorcet method families.
+Voting lets a group ask whether its winner would change if it counted the same ballots using plurality, instant runoff, or head-to-head Condorcet contests. It collects ballots from people or AI personas and compares single- and multi-winner counting rules across plurality, ranked, approval, score, grade, allocation, and Condorcet method families.
 
 [GitHub](https://github.com/expectedparrot/voting) · [Tutorial](https://expectedparrot.github.io/voting/)
 
@@ -428,7 +430,7 @@ Zugunruhe is an agent-focused migration CLI for moving Qualtrics and SurveyMonke
   <a href="https://github.com/expectedparrot/zwicky"><img src="docs/assets/zwicky-artwork.webp" width="640" alt="Zwicky package artwork"></a>
 </p>
 
-Zwicky is a general morphological-analysis CLI for exploring product and feature design spaces. It defines dimensions and values, generates configurations, applies constraints, and supports AI- and human-assisted evaluation, Pareto analysis, and concept selection.
+Use Zwicky for morphological analysis when a product or service has several design dimensions and you need to explain which combinations are compatible. It defines dimensions and values, generates configurations, applies constraints, and supports AI- and human-assisted evaluation, Pareto analysis, and concept selection.
 
 [GitHub](https://github.com/expectedparrot/zwicky) · [Tutorial](https://expectedparrot.github.io/zwicky/)
 

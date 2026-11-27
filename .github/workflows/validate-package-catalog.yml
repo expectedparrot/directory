@@ -1,0 +1,26 @@
+name: Validate package catalog
+
+on:
+  pull_request:
+    paths:
+      - packages.json
+      - .github/workflows/validate-package-catalog.yml
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check catalog entries
+        run: |
+          jq -es '
+            length == 1 and (.[0] | type == "array" and all(.[];
+              ([.name, .description, .repository, .readme_url] | all(.[]; type == "string"))
+              and (.methods | type == "array" and all(.[]; type == "string"))
+            ))
+          ' packages.json > /dev/null
