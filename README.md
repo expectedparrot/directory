@@ -4,6 +4,8 @@
 
 This catalog brings together foundational research tools and application packages from [Expected Parrot](https://www.expectedparrot.com/). Expected Parrot builds open tools for designing, running, and analyzing AI-powered research. Start with EDSL for surveys and model execution, Epiq for evidence-backed data, AISS for research design and analysis, and Conversation for simulated interactions, then explore applications for specific research methods and workflows.
 
+The [search catalog](packages.json) lists public companion packages for discovery through EDSL. When adding a package, include its repository, a short description, and the research methods or abbreviations people use to find it.
+
 ## Foundation packages
 
 Shared tools for storing research evidence and running surveys, experiments, and simulated conversations.
