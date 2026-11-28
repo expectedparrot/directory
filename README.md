@@ -6,6 +6,23 @@ This catalog brings together foundational research tools and application package
 
 The [search catalog](packages.json) lists public companion packages for discovery through EDSL. When adding a package, include its repository, a description of the researcher’s task, inputs and outputs, and both formal method names and everyday terms for supported capabilities. For example, someone looking for rent division might search for “rent splitting” or “envy-free room allocation.” EDSL checks this repository’s `main` branch daily and proposes changes to its bundled snapshot in an EDSL pull request. Maintainers can also run **Sync research package catalog** from the EDSL Actions tab.
 
+## Package workflow guides
+
+Every package in the public search catalog declares a `guide_url`. It links to
+UTF-8 Markdown in that package’s repository, readable before installation or
+login. Agents can read it with `ep skills guide Zwill`, substituting the package
+name returned by `ep skills search`.
+
+The guide should tell a researcher when to use the package, which inputs to
+gather, how to plan and run a minimal study, and how to check the resulting
+artifacts. Include one worked example and identify decisions that need the
+researcher’s input. Keep planning steps usable before any paid execution.
+
+Link the README to a dedicated, maintained workflow document. Packages with a
+native guide command can use the same file as its source. A Python-only package
+can show its Python workflow directly. In `packages.json`, use a raw URL,
+for example `https://raw.githubusercontent.com/expectedparrot/zwill/HEAD/zwill/guides/agent-workflow.md`.
+
 ## Foundation packages
 
 Shared tools for storing research evidence and running surveys, experiments, and simulated conversations.
