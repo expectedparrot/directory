@@ -8,20 +8,22 @@ The [search catalog](packages.json) lists public companion packages for discover
 
 ## Package workflow guides
 
-Every package in the public search catalog declares a `guide_url`. It links to
-UTF-8 Markdown in that package’s repository, readable before installation or
-login. Agents can read it with `ep skills guide Zwill`, substituting the package
-name returned by `ep skills search`.
+Use `guide_url` to point to the package’s existing workflow documentation.
+The README, an agent manual, or the Markdown bundled with its CLI can all serve
+as the source. Use the raw Markdown URL from the repository’s default branch.
+For example, Conversation uses its README’s Python quick start. Zwill uses the
+workflow document shipped with its CLI.
 
-The guide should tell a researcher when to use the package, which inputs to
-gather, how to plan and run a minimal study, and how to check the resulting
-artifacts. Include one worked example and identify decisions that need the
-researcher’s input. Keep planning steps usable before any paid execution.
+Installed packages expose `<package> guide` to explain the workflow. Packages
+with project state also expose `<package> next` to inspect the current project
+and recommend an action. Run it again after completing a step. Each command uses
+the package’s own guidance, state and output format. For example, run
+`zwill guide` when planning a validation study and `zwill next` inside its project.
+Conversation has a Python API and exposes `conversation guide` for its examples.
 
-Link the README to a dedicated, maintained workflow document. Packages with a
-native guide command can use the same file as its source. A Python-only package
-can show its Python workflow directly. In `packages.json`, use a raw URL,
-for example `https://raw.githubusercontent.com/expectedparrot/zwill/HEAD/zwill/guides/agent-workflow.md`.
+Record these as `installed_guide_command` and, for stateful packages,
+`installed_next_command`. Before installation, `ep skills guide NAME` fetches
+the existing documentation from `guide_url`.
 
 ## Foundation packages
 
